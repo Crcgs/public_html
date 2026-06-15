@@ -1,0 +1,1499 @@
+INFO - 2025-12-19 08:37:13 --> CSRF token verified.
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Callables of the form ["Swift_SmtpTransport", "Swift_Transport_EsmtpTransport::__construct"] are deprecated in APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/SmtpTransport.php on line 36.
+ 1 APPPATH/Models/EmailModel.php(128): Swift_SmtpTransport->__construct(null, '587', 'tls')
+ 2 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+ 3 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+ 4 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+ 5 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Callables of the form ["Swift_Message", "Swift_Mime_SimpleMessage::__construct"] are deprecated in APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php on line 46.
+ 1 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+ 2 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+ 3 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+ 4 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+ 5 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('ed6')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+20 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('98704')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+20 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('d')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+20 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('3111')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+20 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('f')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+20 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('324206')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+20 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('dc')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+20 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('8')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+20 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('d')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+20 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('0')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+20 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('cc')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+20 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('71')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+20 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('e')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+20 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('7')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+20 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('c')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+20 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('@')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+20 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('rcgacademy')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+20 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('.')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+20 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('org')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('ed698704d3111f324206dc8d0cc71e7c@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+20 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('noreply')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('noreply@domain.com')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('noreply@domain.com')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailParser.php(30): Egulias\EmailValidator\Parser->parse('noreply@domain.com')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/RFCValidation.php(31): Egulias\EmailValidator\EmailParser->parse('noreply@domain.com')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\RFCValidation->isValid('noreply@domain.com', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(354): Egulias\EmailValidator\EmailValidator->isValid('noreply@domain.com', Object(Egulias\EmailValidator\Validation\RFCValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(272): Swift_Mime_Headers_MailboxHeader->assertValidAddress('noreply@domain.com')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(117): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(74): Swift_Mime_Headers_MailboxHeader->setNameAddresses([...])
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(600): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel([...])
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(213): Swift_Mime_SimpleMimeEntity->setHeaderFieldModel('From', [...])
+13 APPPATH/Models/EmailModel.php(135): Swift_Mime_SimpleMessage->setFrom([...])
+14 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+15 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+16 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+17 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+18 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+19 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+20 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+21 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('@')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('noreply@domain.com')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('noreply@domain.com')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailParser.php(30): Egulias\EmailValidator\Parser->parse('noreply@domain.com')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/RFCValidation.php(31): Egulias\EmailValidator\EmailParser->parse('noreply@domain.com')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\RFCValidation->isValid('noreply@domain.com', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(354): Egulias\EmailValidator\EmailValidator->isValid('noreply@domain.com', Object(Egulias\EmailValidator\Validation\RFCValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(272): Swift_Mime_Headers_MailboxHeader->assertValidAddress('noreply@domain.com')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(117): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(74): Swift_Mime_Headers_MailboxHeader->setNameAddresses([...])
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(600): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel([...])
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(213): Swift_Mime_SimpleMimeEntity->setHeaderFieldModel('From', [...])
+13 APPPATH/Models/EmailModel.php(135): Swift_Mime_SimpleMessage->setFrom([...])
+14 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+15 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+16 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+17 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+18 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+19 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+20 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+21 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('domain')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('noreply@domain.com')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('noreply@domain.com')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailParser.php(30): Egulias\EmailValidator\Parser->parse('noreply@domain.com')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/RFCValidation.php(31): Egulias\EmailValidator\EmailParser->parse('noreply@domain.com')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\RFCValidation->isValid('noreply@domain.com', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(354): Egulias\EmailValidator\EmailValidator->isValid('noreply@domain.com', Object(Egulias\EmailValidator\Validation\RFCValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(272): Swift_Mime_Headers_MailboxHeader->assertValidAddress('noreply@domain.com')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(117): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(74): Swift_Mime_Headers_MailboxHeader->setNameAddresses([...])
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(600): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel([...])
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(213): Swift_Mime_SimpleMimeEntity->setHeaderFieldModel('From', [...])
+13 APPPATH/Models/EmailModel.php(135): Swift_Mime_SimpleMessage->setFrom([...])
+14 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+15 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+16 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+17 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+18 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+19 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+20 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+21 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('.')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('noreply@domain.com')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('noreply@domain.com')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailParser.php(30): Egulias\EmailValidator\Parser->parse('noreply@domain.com')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/RFCValidation.php(31): Egulias\EmailValidator\EmailParser->parse('noreply@domain.com')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\RFCValidation->isValid('noreply@domain.com', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(354): Egulias\EmailValidator\EmailValidator->isValid('noreply@domain.com', Object(Egulias\EmailValidator\Validation\RFCValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(272): Swift_Mime_Headers_MailboxHeader->assertValidAddress('noreply@domain.com')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(117): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(74): Swift_Mime_Headers_MailboxHeader->setNameAddresses([...])
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(600): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel([...])
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(213): Swift_Mime_SimpleMimeEntity->setHeaderFieldModel('From', [...])
+13 APPPATH/Models/EmailModel.php(135): Swift_Mime_SimpleMessage->setFrom([...])
+14 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+15 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+16 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+17 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+18 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+19 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+20 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+21 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('com')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('noreply@domain.com')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('noreply@domain.com')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailParser.php(30): Egulias\EmailValidator\Parser->parse('noreply@domain.com')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/RFCValidation.php(31): Egulias\EmailValidator\EmailParser->parse('noreply@domain.com')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\RFCValidation->isValid('noreply@domain.com', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(354): Egulias\EmailValidator\EmailValidator->isValid('noreply@domain.com', Object(Egulias\EmailValidator\Validation\RFCValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(272): Swift_Mime_Headers_MailboxHeader->assertValidAddress('noreply@domain.com')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(117): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(74): Swift_Mime_Headers_MailboxHeader->setNameAddresses([...])
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(600): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel([...])
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(213): Swift_Mime_SimpleMimeEntity->setHeaderFieldModel('From', [...])
+13 APPPATH/Models/EmailModel.php(135): Swift_Mime_SimpleMessage->setFrom([...])
+14 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+15 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+16 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+17 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+18 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+19 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+20 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+21 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('leemax')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('leemax7894@gmail.com')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('leemax7894@gmail.com')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailParser.php(30): Egulias\EmailValidator\Parser->parse('leemax7894@gmail.com')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/RFCValidation.php(31): Egulias\EmailValidator\EmailParser->parse('leemax7894@gmail.com')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\RFCValidation->isValid('leemax7894@gmail.com', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(354): Egulias\EmailValidator\EmailValidator->isValid('leemax7894@gmail.com', Object(Egulias\EmailValidator\Validation\RFCValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(272): Swift_Mime_Headers_MailboxHeader->assertValidAddress('leemax7894@gmail.com')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(117): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(74): Swift_Mime_Headers_MailboxHeader->setNameAddresses([...])
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(61): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel([...])
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(71): Swift_Mime_SimpleHeaderFactory->createMailboxHeader('To', [...])
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(323): Swift_Mime_SimpleHeaderSet->addMailboxHeader('To', [...])
+14 APPPATH/Models/EmailModel.php(136): Swift_Mime_SimpleMessage->setTo([...])
+15 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+16 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+17 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+18 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+19 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+20 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+21 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('7894')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('leemax7894@gmail.com')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('leemax7894@gmail.com')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailParser.php(30): Egulias\EmailValidator\Parser->parse('leemax7894@gmail.com')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/RFCValidation.php(31): Egulias\EmailValidator\EmailParser->parse('leemax7894@gmail.com')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\RFCValidation->isValid('leemax7894@gmail.com', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(354): Egulias\EmailValidator\EmailValidator->isValid('leemax7894@gmail.com', Object(Egulias\EmailValidator\Validation\RFCValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(272): Swift_Mime_Headers_MailboxHeader->assertValidAddress('leemax7894@gmail.com')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(117): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(74): Swift_Mime_Headers_MailboxHeader->setNameAddresses([...])
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(61): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel([...])
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(71): Swift_Mime_SimpleHeaderFactory->createMailboxHeader('To', [...])
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(323): Swift_Mime_SimpleHeaderSet->addMailboxHeader('To', [...])
+14 APPPATH/Models/EmailModel.php(136): Swift_Mime_SimpleMessage->setTo([...])
+15 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+16 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+17 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+18 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+19 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+20 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+21 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('@')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('leemax7894@gmail.com')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('leemax7894@gmail.com')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailParser.php(30): Egulias\EmailValidator\Parser->parse('leemax7894@gmail.com')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/RFCValidation.php(31): Egulias\EmailValidator\EmailParser->parse('leemax7894@gmail.com')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\RFCValidation->isValid('leemax7894@gmail.com', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(354): Egulias\EmailValidator\EmailValidator->isValid('leemax7894@gmail.com', Object(Egulias\EmailValidator\Validation\RFCValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(272): Swift_Mime_Headers_MailboxHeader->assertValidAddress('leemax7894@gmail.com')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(117): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(74): Swift_Mime_Headers_MailboxHeader->setNameAddresses([...])
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(61): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel([...])
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(71): Swift_Mime_SimpleHeaderFactory->createMailboxHeader('To', [...])
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(323): Swift_Mime_SimpleHeaderSet->addMailboxHeader('To', [...])
+14 APPPATH/Models/EmailModel.php(136): Swift_Mime_SimpleMessage->setTo([...])
+15 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+16 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+17 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+18 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+19 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+20 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+21 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('gmail')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('leemax7894@gmail.com')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('leemax7894@gmail.com')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailParser.php(30): Egulias\EmailValidator\Parser->parse('leemax7894@gmail.com')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/RFCValidation.php(31): Egulias\EmailValidator\EmailParser->parse('leemax7894@gmail.com')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\RFCValidation->isValid('leemax7894@gmail.com', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(354): Egulias\EmailValidator\EmailValidator->isValid('leemax7894@gmail.com', Object(Egulias\EmailValidator\Validation\RFCValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(272): Swift_Mime_Headers_MailboxHeader->assertValidAddress('leemax7894@gmail.com')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(117): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(74): Swift_Mime_Headers_MailboxHeader->setNameAddresses([...])
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(61): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel([...])
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(71): Swift_Mime_SimpleHeaderFactory->createMailboxHeader('To', [...])
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(323): Swift_Mime_SimpleHeaderSet->addMailboxHeader('To', [...])
+14 APPPATH/Models/EmailModel.php(136): Swift_Mime_SimpleMessage->setTo([...])
+15 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+16 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+17 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+18 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+19 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+20 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+21 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('.')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('leemax7894@gmail.com')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('leemax7894@gmail.com')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailParser.php(30): Egulias\EmailValidator\Parser->parse('leemax7894@gmail.com')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/RFCValidation.php(31): Egulias\EmailValidator\EmailParser->parse('leemax7894@gmail.com')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\RFCValidation->isValid('leemax7894@gmail.com', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(354): Egulias\EmailValidator\EmailValidator->isValid('leemax7894@gmail.com', Object(Egulias\EmailValidator\Validation\RFCValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(272): Swift_Mime_Headers_MailboxHeader->assertValidAddress('leemax7894@gmail.com')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(117): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(74): Swift_Mime_Headers_MailboxHeader->setNameAddresses([...])
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(61): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel([...])
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(71): Swift_Mime_SimpleHeaderFactory->createMailboxHeader('To', [...])
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(323): Swift_Mime_SimpleHeaderSet->addMailboxHeader('To', [...])
+14 APPPATH/Models/EmailModel.php(136): Swift_Mime_SimpleMessage->setTo([...])
+15 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+16 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+17 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+18 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+19 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+20 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+21 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-12-19 08:37:13 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('com')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('leemax7894@gmail.com')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('leemax7894@gmail.com')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailParser.php(30): Egulias\EmailValidator\Parser->parse('leemax7894@gmail.com')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/RFCValidation.php(31): Egulias\EmailValidator\EmailParser->parse('leemax7894@gmail.com')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\RFCValidation->isValid('leemax7894@gmail.com', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(354): Egulias\EmailValidator\EmailValidator->isValid('leemax7894@gmail.com', Object(Egulias\EmailValidator\Validation\RFCValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(272): Swift_Mime_Headers_MailboxHeader->assertValidAddress('leemax7894@gmail.com')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(117): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(74): Swift_Mime_Headers_MailboxHeader->setNameAddresses([...])
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(61): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel([...])
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(71): Swift_Mime_SimpleHeaderFactory->createMailboxHeader('To', [...])
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(323): Swift_Mime_SimpleHeaderSet->addMailboxHeader('To', [...])
+14 APPPATH/Models/EmailModel.php(136): Swift_Mime_SimpleMessage->setTo([...])
+15 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+16 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+17 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('Kaylee Pendergrass', 'pendergrass.kaylee54@yahoo.com', 'Hi,
+
+We have a promotional offer for your website rcgacademy.org.
+
+Why do you need this? Imagine launching your own AI store on WordPress, stocked with ready-to-sell GPTs and AI prompts—and starting to make money today. No design headaches, no tech setup, just a polished storefront that builds trust and delivers real sales straight out of the box.
+
+Whether you\'re a webmaster or money-maker, AI Store Fortune removes the tech barrier. Made for people who’d rather grow their traffic and income than tinker with confusing plugins. Want to finally turn AI ideas into stable income? Click to see how effortlessly you can own—and profit from—your AI business.
+
+See it in action: https://testaip.online/AIStoreFortune?rcgacademy.org
+
+
+
+
+
+
+
+
+
+You are receiving this message because we believe our offer may be relevant to you. 
+If you do not wish to receive further communications from us, please click here to UNSUBSCRIBE:
+https://testaip.online/unsub?domain=rcgacademy.org 
+Address: Address: 1464 Lewis Street Roselle, IL 60177
+Looking out for you, Michael Turner.')
+18 APPPATH/Controllers/HomeController.php(470): App\Models\CommonModel->addContactMessage()
+19 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+20 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+21 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH/index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2025-12-19 00:15:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 00:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 00:24:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 00:24:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 00:24:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 02:17:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 05:04:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 05:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 05:47:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 05:48:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 05:48:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 05:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 05:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 05:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 05:49:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 05:49:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 06:34:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 06:36:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 06:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 06:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 06:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 06:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 06:53:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 06:53:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 06:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 06:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 06:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 06:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 08:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 09:07:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 14:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 17:14:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 17:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 17:20:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 17:21:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 17:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 17:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 17:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 17:24:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 17:24:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 18:10:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 18:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 18:10:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 18:10:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 19:14:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 21:08:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 21:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 21:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 21:09:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 21:09:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-12-19 22:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.

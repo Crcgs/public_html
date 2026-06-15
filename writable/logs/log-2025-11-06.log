@@ -1,0 +1,298 @@
+INFO - 2025-11-06 02:24:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 02:24:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 02:24:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 02:24:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 02:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 02:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 02:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 02:24:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 06:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 06:25:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2025-11-06 06:35:50 --> Error connecting to the database: mysqli_sql_exception: Resource temporarily unavailable in /home/u575370958/domains/rcgacademy.org/public_html/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home/u575370958/domains/rcgacademy.org/public_html/system/Database/MySQLi/Connection.php(173): mysqli->real_connect()
+#1 /home/u575370958/domains/rcgacademy.org/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/u575370958/domains/rcgacademy.org/public_html/system/Session/Handlers/DatabaseHandler.php(109): CodeIgniter\Database\BaseConnection->initialize()
+#3 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open()
+#4 /home/u575370958/domains/rcgacademy.org/public_html/system/Session/Session.php(920): session_start()
+#5 /home/u575370958/domains/rcgacademy.org/public_html/system/Session/Session.php(250): CodeIgniter\Session\Session->startSession()
+#6 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/Services.php(674): CodeIgniter\Session\Session->start()
+#7 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+#8 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic()
+#9 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance()
+#10 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+#11 /home/u575370958/domains/rcgacademy.org/public_html/app/Config/Globals.php(29): CodeIgniter\Config\BaseService::__callStatic()
+#12 /home/u575370958/domains/rcgacademy.org/public_html/app/Config/Globals.php(120): Config\Globals::setGlobals()
+#13 /home/u575370958/domains/rcgacademy.org/public_html/system/Autoloader/Autoloader.php(312): include_once('/home/u57537095...')
+#14 /home/u575370958/domains/rcgacademy.org/public_html/system/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+#15 /home/u575370958/domains/rcgacademy.org/public_html/system/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#16 /home/u575370958/domains/rcgacademy.org/public_html/app/Config/Routes.php(7): CodeIgniter\Autoloader\Autoloader->loadClass()
+#17 /home/u575370958/domains/rcgacademy.org/public_html/system/Router/RouteCollection.php(267): require('/home/u57537095...')
+#18 /home/u575370958/domains/rcgacademy.org/public_html/system/CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+#19 /home/u575370958/domains/rcgacademy.org/public_html/system/CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt()
+#20 /home/u575370958/domains/rcgacademy.org/public_html/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#21 /home/u575370958/domains/rcgacademy.org/public_html/index.php(77): CodeIgniter\CodeIgniter->run()
+#22 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Resource temporarily unavailable in /home/u575370958/domains/rcgacademy.org/public_html/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home/u575370958/domains/rcgacademy.org/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/u575370958/domains/rcgacademy.org/public_html/system/Session/Handlers/DatabaseHandler.php(109): CodeIgniter\Database\BaseConnection->initialize()
+#2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open()
+#3 /home/u575370958/domains/rcgacademy.org/public_html/system/Session/Session.php(920): session_start()
+#4 /home/u575370958/domains/rcgacademy.org/public_html/system/Session/Session.php(250): CodeIgniter\Session\Session->startSession()
+#5 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/Services.php(674): CodeIgniter\Session\Session->start()
+#6 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+#7 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic()
+#8 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance()
+#9 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+#10 /home/u575370958/domains/rcgacademy.org/public_html/app/Config/Globals.php(29): CodeIgniter\Config\BaseService::__callStatic()
+#11 /home/u575370958/domains/rcgacademy.org/public_html/app/Config/Globals.php(120): Config\Globals::setGlobals()
+#12 /home/u575370958/domains/rcgacademy.org/public_html/system/Autoloader/Autoloader.php(312): include_once('/home/u57537095...')
+#13 /home/u575370958/domains/rcgacademy.org/public_html/system/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+#14 /home/u575370958/domains/rcgacademy.org/public_html/system/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#15 /home/u575370958/domains/rcgacademy.org/public_html/app/Config/Routes.php(7): CodeIgniter\Autoloader\Autoloader->loadClass()
+#16 /home/u575370958/domains/rcgacademy.org/public_html/system/Router/RouteCollection.php(267): require('/home/u57537095...')
+#17 /home/u575370958/domains/rcgacademy.org/public_html/system/CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+#18 /home/u575370958/domains/rcgacademy.org/public_html/system/CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt()
+#19 /home/u575370958/domains/rcgacademy.org/public_html/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#20 /home/u575370958/domains/rcgacademy.org/public_html/index.php(77): CodeIgniter\CodeIgniter->run()
+#21 {main}
+CRITICAL - 2025-11-06 06:35:50 --> Unable to connect to the database.
+Main connection [MySQLi]: Resource temporarily unavailable
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Session/Handlers/DatabaseHandler.php(109): CodeIgniter\Database\BaseConnection->initialize()
+ 2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open()
+ 3 SYSTEMPATH/Session/Session.php(920): session_start()
+ 4 SYSTEMPATH/Session/Session.php(250): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH/Config/Services.php(674): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+ 7 SYSTEMPATH/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic()
+ 8 SYSTEMPATH/Config/Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance()
+ 9 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+10 APPPATH/Config/Globals.php(29): CodeIgniter\Config\BaseService::__callStatic()
+11 APPPATH/Config/Globals.php(120): Config\Globals::setGlobals()
+12 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/home/u575370958/domains/rcgacademy.org/public_html/app/Config/Globals.php')
+13 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+14 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+15 APPPATH/Config/Routes.php(7): CodeIgniter\Autoloader\Autoloader->loadClass()
+16 SYSTEMPATH/Router/RouteCollection.php(267): require('/home/u575370958/domains/rcgacademy.org/public_html/app/Config/Routes.php')
+17 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+18 SYSTEMPATH/CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt()
+19 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+20 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-11-06 06:37:30 --> Error connecting to the database: mysqli_sql_exception: Resource temporarily unavailable in /home/u575370958/domains/rcgacademy.org/public_html/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home/u575370958/domains/rcgacademy.org/public_html/system/Database/MySQLi/Connection.php(173): mysqli->real_connect()
+#1 /home/u575370958/domains/rcgacademy.org/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/u575370958/domains/rcgacademy.org/public_html/system/Session/Handlers/DatabaseHandler.php(109): CodeIgniter\Database\BaseConnection->initialize()
+#3 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open()
+#4 /home/u575370958/domains/rcgacademy.org/public_html/system/Session/Session.php(920): session_start()
+#5 /home/u575370958/domains/rcgacademy.org/public_html/system/Session/Session.php(250): CodeIgniter\Session\Session->startSession()
+#6 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/Services.php(674): CodeIgniter\Session\Session->start()
+#7 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+#8 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic()
+#9 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance()
+#10 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+#11 /home/u575370958/domains/rcgacademy.org/public_html/app/Config/Globals.php(29): CodeIgniter\Config\BaseService::__callStatic()
+#12 /home/u575370958/domains/rcgacademy.org/public_html/app/Config/Globals.php(120): Config\Globals::setGlobals()
+#13 /home/u575370958/domains/rcgacademy.org/public_html/system/Autoloader/Autoloader.php(312): include_once('/home/u57537095...')
+#14 /home/u575370958/domains/rcgacademy.org/public_html/system/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+#15 /home/u575370958/domains/rcgacademy.org/public_html/system/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#16 /home/u575370958/domains/rcgacademy.org/public_html/app/Config/Routes.php(7): CodeIgniter\Autoloader\Autoloader->loadClass()
+#17 /home/u575370958/domains/rcgacademy.org/public_html/system/Router/RouteCollection.php(267): require('/home/u57537095...')
+#18 /home/u575370958/domains/rcgacademy.org/public_html/system/CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+#19 /home/u575370958/domains/rcgacademy.org/public_html/system/CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt()
+#20 /home/u575370958/domains/rcgacademy.org/public_html/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#21 /home/u575370958/domains/rcgacademy.org/public_html/index.php(77): CodeIgniter\CodeIgniter->run()
+#22 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Resource temporarily unavailable in /home/u575370958/domains/rcgacademy.org/public_html/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home/u575370958/domains/rcgacademy.org/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/u575370958/domains/rcgacademy.org/public_html/system/Session/Handlers/DatabaseHandler.php(109): CodeIgniter\Database\BaseConnection->initialize()
+#2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open()
+#3 /home/u575370958/domains/rcgacademy.org/public_html/system/Session/Session.php(920): session_start()
+#4 /home/u575370958/domains/rcgacademy.org/public_html/system/Session/Session.php(250): CodeIgniter\Session\Session->startSession()
+#5 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/Services.php(674): CodeIgniter\Session\Session->start()
+#6 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+#7 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic()
+#8 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance()
+#9 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+#10 /home/u575370958/domains/rcgacademy.org/public_html/app/Config/Globals.php(29): CodeIgniter\Config\BaseService::__callStatic()
+#11 /home/u575370958/domains/rcgacademy.org/public_html/app/Config/Globals.php(120): Config\Globals::setGlobals()
+#12 /home/u575370958/domains/rcgacademy.org/public_html/system/Autoloader/Autoloader.php(312): include_once('/home/u57537095...')
+#13 /home/u575370958/domains/rcgacademy.org/public_html/system/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+#14 /home/u575370958/domains/rcgacademy.org/public_html/system/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#15 /home/u575370958/domains/rcgacademy.org/public_html/app/Config/Routes.php(7): CodeIgniter\Autoloader\Autoloader->loadClass()
+#16 /home/u575370958/domains/rcgacademy.org/public_html/system/Router/RouteCollection.php(267): require('/home/u57537095...')
+#17 /home/u575370958/domains/rcgacademy.org/public_html/system/CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+#18 /home/u575370958/domains/rcgacademy.org/public_html/system/CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt()
+#19 /home/u575370958/domains/rcgacademy.org/public_html/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#20 /home/u575370958/domains/rcgacademy.org/public_html/index.php(77): CodeIgniter\CodeIgniter->run()
+#21 {main}
+CRITICAL - 2025-11-06 06:37:30 --> Unable to connect to the database.
+Main connection [MySQLi]: Resource temporarily unavailable
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Session/Handlers/DatabaseHandler.php(109): CodeIgniter\Database\BaseConnection->initialize()
+ 2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open()
+ 3 SYSTEMPATH/Session/Session.php(920): session_start()
+ 4 SYSTEMPATH/Session/Session.php(250): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH/Config/Services.php(674): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+ 7 SYSTEMPATH/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic()
+ 8 SYSTEMPATH/Config/Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance()
+ 9 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+10 APPPATH/Config/Globals.php(29): CodeIgniter\Config\BaseService::__callStatic()
+11 APPPATH/Config/Globals.php(120): Config\Globals::setGlobals()
+12 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/home/u575370958/domains/rcgacademy.org/public_html/app/Config/Globals.php')
+13 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+14 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+15 APPPATH/Config/Routes.php(7): CodeIgniter\Autoloader\Autoloader->loadClass()
+16 SYSTEMPATH/Router/RouteCollection.php(267): require('/home/u575370958/domains/rcgacademy.org/public_html/app/Config/Routes.php')
+17 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+18 SYSTEMPATH/CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt()
+19 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+20 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-11-06 06:37:40 --> Error connecting to the database: mysqli_sql_exception: Too many connections in /home/u575370958/domains/rcgacademy.org/public_html/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /home/u575370958/domains/rcgacademy.org/public_html/system/Database/MySQLi/Connection.php(173): mysqli->real_connect()
+#1 /home/u575370958/domains/rcgacademy.org/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/u575370958/domains/rcgacademy.org/public_html/system/Session/Handlers/DatabaseHandler.php(109): CodeIgniter\Database\BaseConnection->initialize()
+#3 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open()
+#4 /home/u575370958/domains/rcgacademy.org/public_html/system/Session/Session.php(920): session_start()
+#5 /home/u575370958/domains/rcgacademy.org/public_html/system/Session/Session.php(250): CodeIgniter\Session\Session->startSession()
+#6 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/Services.php(674): CodeIgniter\Session\Session->start()
+#7 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+#8 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic()
+#9 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance()
+#10 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+#11 /home/u575370958/domains/rcgacademy.org/public_html/app/Config/Globals.php(29): CodeIgniter\Config\BaseService::__callStatic()
+#12 /home/u575370958/domains/rcgacademy.org/public_html/app/Config/Globals.php(120): Config\Globals::setGlobals()
+#13 /home/u575370958/domains/rcgacademy.org/public_html/system/Autoloader/Autoloader.php(312): include_once('/home/u57537095...')
+#14 /home/u575370958/domains/rcgacademy.org/public_html/system/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+#15 /home/u575370958/domains/rcgacademy.org/public_html/system/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#16 /home/u575370958/domains/rcgacademy.org/public_html/app/Config/Routes.php(7): CodeIgniter\Autoloader\Autoloader->loadClass()
+#17 /home/u575370958/domains/rcgacademy.org/public_html/system/Router/RouteCollection.php(267): require('/home/u57537095...')
+#18 /home/u575370958/domains/rcgacademy.org/public_html/system/CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+#19 /home/u575370958/domains/rcgacademy.org/public_html/system/CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt()
+#20 /home/u575370958/domains/rcgacademy.org/public_html/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#21 /home/u575370958/domains/rcgacademy.org/public_html/index.php(77): CodeIgniter\CodeIgniter->run()
+#22 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Too many connections in /home/u575370958/domains/rcgacademy.org/public_html/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /home/u575370958/domains/rcgacademy.org/public_html/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/u575370958/domains/rcgacademy.org/public_html/system/Session/Handlers/DatabaseHandler.php(109): CodeIgniter\Database\BaseConnection->initialize()
+#2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open()
+#3 /home/u575370958/domains/rcgacademy.org/public_html/system/Session/Session.php(920): session_start()
+#4 /home/u575370958/domains/rcgacademy.org/public_html/system/Session/Session.php(250): CodeIgniter\Session\Session->startSession()
+#5 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/Services.php(674): CodeIgniter\Session\Session->start()
+#6 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+#7 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic()
+#8 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance()
+#9 /home/u575370958/domains/rcgacademy.org/public_html/system/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+#10 /home/u575370958/domains/rcgacademy.org/public_html/app/Config/Globals.php(29): CodeIgniter\Config\BaseService::__callStatic()
+#11 /home/u575370958/domains/rcgacademy.org/public_html/app/Config/Globals.php(120): Config\Globals::setGlobals()
+#12 /home/u575370958/domains/rcgacademy.org/public_html/system/Autoloader/Autoloader.php(312): include_once('/home/u57537095...')
+#13 /home/u575370958/domains/rcgacademy.org/public_html/system/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+#14 /home/u575370958/domains/rcgacademy.org/public_html/system/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#15 /home/u575370958/domains/rcgacademy.org/public_html/app/Config/Routes.php(7): CodeIgniter\Autoloader\Autoloader->loadClass()
+#16 /home/u575370958/domains/rcgacademy.org/public_html/system/Router/RouteCollection.php(267): require('/home/u57537095...')
+#17 /home/u575370958/domains/rcgacademy.org/public_html/system/CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+#18 /home/u575370958/domains/rcgacademy.org/public_html/system/CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt()
+#19 /home/u575370958/domains/rcgacademy.org/public_html/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#20 /home/u575370958/domains/rcgacademy.org/public_html/index.php(77): CodeIgniter\CodeIgniter->run()
+#21 {main}
+CRITICAL - 2025-11-06 06:37:40 --> Unable to connect to the database.
+Main connection [MySQLi]: Too many connections
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Session/Handlers/DatabaseHandler.php(109): CodeIgniter\Database\BaseConnection->initialize()
+ 2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open()
+ 3 SYSTEMPATH/Session/Session.php(920): session_start()
+ 4 SYSTEMPATH/Session/Session.php(250): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH/Config/Services.php(674): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+ 7 SYSTEMPATH/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic()
+ 8 SYSTEMPATH/Config/Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance()
+ 9 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+10 APPPATH/Config/Globals.php(29): CodeIgniter\Config\BaseService::__callStatic()
+11 APPPATH/Config/Globals.php(120): Config\Globals::setGlobals()
+12 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once('/home/u575370958/domains/rcgacademy.org/public_html/app/Config/Globals.php')
+13 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+14 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+15 APPPATH/Config/Routes.php(7): CodeIgniter\Autoloader\Autoloader->loadClass()
+16 SYSTEMPATH/Router/RouteCollection.php(267): require('/home/u575370958/domains/rcgacademy.org/public_html/app/Config/Routes.php')
+17 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+18 SYSTEMPATH/CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt()
+19 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+20 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2025-11-06 06:41:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 06:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 06:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 07:06:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 07:06:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 07:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 07:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 07:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 07:06:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 16:06:15 --> CSRF token verified.
+INFO - 2025-11-06 07:06:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 07:06:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 07:06:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 07:06:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 07:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 16:06:38 --> CSRF token verified.
+INFO - 2025-11-06 07:06:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 16:06:43 --> CSRF token verified.
+INFO - 2025-11-06 07:10:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 16:10:06 --> CSRF token verified.
+INFO - 2025-11-06 07:12:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 07:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 16:12:49 --> CSRF token verified.
+INFO - 2025-11-06 07:13:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 16:13:00 --> CSRF token verified.
+INFO - 2025-11-06 07:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 16:13:03 --> CSRF token verified.
+INFO - 2025-11-06 07:13:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 16:13:07 --> CSRF token verified.
+INFO - 2025-11-06 07:13:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 07:13:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 07:13:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 08:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 08:22:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 08:22:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 08:22:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 08:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 08:22:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 08:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 08:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 09:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 09:33:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 10:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 11:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 11:27:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 13:46:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 13:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 13:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 14:39:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 14:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 14:52:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 15:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 15:36:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 15:36:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 15:46:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 15:46:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 16:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 17:48:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 18:01:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 18:14:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 19:08:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 20:11:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 21:05:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 21:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 22:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 22:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 22:44:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 22:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-06 22:44:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.

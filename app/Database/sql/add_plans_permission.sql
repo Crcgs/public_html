@@ -1,0 +1,1 @@
+ALTER TABLE `roles` ADD `plans` TINYINT(1) NOT NULL DEFAULT '0' AFTER `ad_spaces`; 

@@ -1,0 +1,901 @@
+INFO - 2025-11-25 04:00:21 --> CSRF token verified.
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Callables of the form ["Swift_SmtpTransport", "Swift_Transport_EsmtpTransport::__construct"] are deprecated in APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/SmtpTransport.php on line 36.
+ 1 APPPATH/Models/EmailModel.php(128): Swift_SmtpTransport->__construct(null, '587', 'tls')
+ 2 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+ 3 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+ 4 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+ 5 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Callables of the form ["Swift_Message", "Swift_Mime_SimpleMessage::__construct"] are deprecated in APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php on line 46.
+ 1 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+ 2 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+ 3 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+ 4 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+ 5 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('a')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+20 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('9')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+20 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('a6')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+20 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('435')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+20 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('fb')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+20 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('92')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+20 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('b')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+20 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('5')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+20 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('ebc4')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+20 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('d')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+20 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('16')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+20 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('ef')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+20 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('97723')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+20 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('aa')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+20 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('995')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+20 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('@')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+20 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('rcgacademy')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+20 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('.')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+20 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('org')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/MessageIDParser.php(32): Egulias\EmailValidator\Parser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/MessageIDValidation.php(27): Egulias\EmailValidator\MessageIDParser->parse('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\MessageIDValidation->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(185): Egulias\EmailValidator\EmailValidator->isValid('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org', Object(Egulias\EmailValidator\Validation\MessageIDValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(129): Swift_Mime_Headers_IdentificationHeader->assertValidId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(100): Swift_Mime_Headers_IdentificationHeader->setIds([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/IdentificationHeader.php(76): Swift_Mime_Headers_IdentificationHeader->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(140): Swift_Mime_Headers_IdentificationHeader->setFieldBodyModel('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(115): Swift_Mime_SimpleHeaderFactory->createIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(217): Swift_Mime_SimpleHeaderSet->addIdHeader('Message-ID', 'a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+14 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(53): Swift_Mime_SimpleMimeEntity->setId('a9a6435fb92b5ebc4d16ef97723aa995@rcgacademy.org')
+15 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Message.php(48): Swift_Mime_SimpleMessage->__construct(Object(Swift_Mime_SimpleHeaderSet), Object(Swift_Mime_ContentEncoder_QpContentEncoderProxy), Object(Swift_KeyCache_DiskKeyCache), Object(Swift_Mime_IdGenerator), 'utf-8')
+16 APPPATH/Models/EmailModel.php(134): Swift_Message->__construct('Varient')
+17 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+18 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+19 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+20 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+21 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+22 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+23 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+24 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('noreply')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('noreply@domain.com')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('noreply@domain.com')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailParser.php(30): Egulias\EmailValidator\Parser->parse('noreply@domain.com')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/RFCValidation.php(31): Egulias\EmailValidator\EmailParser->parse('noreply@domain.com')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\RFCValidation->isValid('noreply@domain.com', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(354): Egulias\EmailValidator\EmailValidator->isValid('noreply@domain.com', Object(Egulias\EmailValidator\Validation\RFCValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(272): Swift_Mime_Headers_MailboxHeader->assertValidAddress('noreply@domain.com')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(117): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(74): Swift_Mime_Headers_MailboxHeader->setNameAddresses([...])
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(600): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel([...])
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(213): Swift_Mime_SimpleMimeEntity->setHeaderFieldModel('From', [...])
+13 APPPATH/Models/EmailModel.php(135): Swift_Mime_SimpleMessage->setFrom([...])
+14 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+15 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+16 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+17 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+18 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+19 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+20 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+21 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('@')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('noreply@domain.com')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('noreply@domain.com')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailParser.php(30): Egulias\EmailValidator\Parser->parse('noreply@domain.com')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/RFCValidation.php(31): Egulias\EmailValidator\EmailParser->parse('noreply@domain.com')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\RFCValidation->isValid('noreply@domain.com', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(354): Egulias\EmailValidator\EmailValidator->isValid('noreply@domain.com', Object(Egulias\EmailValidator\Validation\RFCValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(272): Swift_Mime_Headers_MailboxHeader->assertValidAddress('noreply@domain.com')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(117): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(74): Swift_Mime_Headers_MailboxHeader->setNameAddresses([...])
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(600): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel([...])
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(213): Swift_Mime_SimpleMimeEntity->setHeaderFieldModel('From', [...])
+13 APPPATH/Models/EmailModel.php(135): Swift_Mime_SimpleMessage->setFrom([...])
+14 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+15 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+16 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+17 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+18 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+19 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+20 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+21 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('domain')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('noreply@domain.com')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('noreply@domain.com')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailParser.php(30): Egulias\EmailValidator\Parser->parse('noreply@domain.com')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/RFCValidation.php(31): Egulias\EmailValidator\EmailParser->parse('noreply@domain.com')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\RFCValidation->isValid('noreply@domain.com', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(354): Egulias\EmailValidator\EmailValidator->isValid('noreply@domain.com', Object(Egulias\EmailValidator\Validation\RFCValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(272): Swift_Mime_Headers_MailboxHeader->assertValidAddress('noreply@domain.com')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(117): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(74): Swift_Mime_Headers_MailboxHeader->setNameAddresses([...])
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(600): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel([...])
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(213): Swift_Mime_SimpleMimeEntity->setHeaderFieldModel('From', [...])
+13 APPPATH/Models/EmailModel.php(135): Swift_Mime_SimpleMessage->setFrom([...])
+14 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+15 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+16 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+17 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+18 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+19 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+20 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+21 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('.')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('noreply@domain.com')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('noreply@domain.com')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailParser.php(30): Egulias\EmailValidator\Parser->parse('noreply@domain.com')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/RFCValidation.php(31): Egulias\EmailValidator\EmailParser->parse('noreply@domain.com')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\RFCValidation->isValid('noreply@domain.com', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(354): Egulias\EmailValidator\EmailValidator->isValid('noreply@domain.com', Object(Egulias\EmailValidator\Validation\RFCValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(272): Swift_Mime_Headers_MailboxHeader->assertValidAddress('noreply@domain.com')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(117): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(74): Swift_Mime_Headers_MailboxHeader->setNameAddresses([...])
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(600): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel([...])
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(213): Swift_Mime_SimpleMimeEntity->setHeaderFieldModel('From', [...])
+13 APPPATH/Models/EmailModel.php(135): Swift_Mime_SimpleMessage->setFrom([...])
+14 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+15 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+16 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+17 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+18 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+19 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+20 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+21 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('com')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('noreply@domain.com')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('noreply@domain.com')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailParser.php(30): Egulias\EmailValidator\Parser->parse('noreply@domain.com')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/RFCValidation.php(31): Egulias\EmailValidator\EmailParser->parse('noreply@domain.com')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\RFCValidation->isValid('noreply@domain.com', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(354): Egulias\EmailValidator\EmailValidator->isValid('noreply@domain.com', Object(Egulias\EmailValidator\Validation\RFCValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(272): Swift_Mime_Headers_MailboxHeader->assertValidAddress('noreply@domain.com')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(117): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(74): Swift_Mime_Headers_MailboxHeader->setNameAddresses([...])
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php(600): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel([...])
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(213): Swift_Mime_SimpleMimeEntity->setHeaderFieldModel('From', [...])
+13 APPPATH/Models/EmailModel.php(135): Swift_Mime_SimpleMessage->setFrom([...])
+14 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+15 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+16 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+17 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+18 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+19 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+20 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+21 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('leemax')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('leemax7894@gmail.com')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('leemax7894@gmail.com')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailParser.php(30): Egulias\EmailValidator\Parser->parse('leemax7894@gmail.com')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/RFCValidation.php(31): Egulias\EmailValidator\EmailParser->parse('leemax7894@gmail.com')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\RFCValidation->isValid('leemax7894@gmail.com', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(354): Egulias\EmailValidator\EmailValidator->isValid('leemax7894@gmail.com', Object(Egulias\EmailValidator\Validation\RFCValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(272): Swift_Mime_Headers_MailboxHeader->assertValidAddress('leemax7894@gmail.com')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(117): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(74): Swift_Mime_Headers_MailboxHeader->setNameAddresses([...])
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(61): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel([...])
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(71): Swift_Mime_SimpleHeaderFactory->createMailboxHeader('To', [...])
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(323): Swift_Mime_SimpleHeaderSet->addMailboxHeader('To', [...])
+14 APPPATH/Models/EmailModel.php(136): Swift_Mime_SimpleMessage->setTo([...])
+15 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+16 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+17 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+18 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+19 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+20 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+21 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('7894')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('leemax7894@gmail.com')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('leemax7894@gmail.com')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailParser.php(30): Egulias\EmailValidator\Parser->parse('leemax7894@gmail.com')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/RFCValidation.php(31): Egulias\EmailValidator\EmailParser->parse('leemax7894@gmail.com')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\RFCValidation->isValid('leemax7894@gmail.com', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(354): Egulias\EmailValidator\EmailValidator->isValid('leemax7894@gmail.com', Object(Egulias\EmailValidator\Validation\RFCValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(272): Swift_Mime_Headers_MailboxHeader->assertValidAddress('leemax7894@gmail.com')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(117): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(74): Swift_Mime_Headers_MailboxHeader->setNameAddresses([...])
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(61): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel([...])
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(71): Swift_Mime_SimpleHeaderFactory->createMailboxHeader('To', [...])
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(323): Swift_Mime_SimpleHeaderSet->addMailboxHeader('To', [...])
+14 APPPATH/Models/EmailModel.php(136): Swift_Mime_SimpleMessage->setTo([...])
+15 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+16 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+17 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+18 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+19 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+20 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+21 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('@')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('leemax7894@gmail.com')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('leemax7894@gmail.com')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailParser.php(30): Egulias\EmailValidator\Parser->parse('leemax7894@gmail.com')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/RFCValidation.php(31): Egulias\EmailValidator\EmailParser->parse('leemax7894@gmail.com')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\RFCValidation->isValid('leemax7894@gmail.com', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(354): Egulias\EmailValidator\EmailValidator->isValid('leemax7894@gmail.com', Object(Egulias\EmailValidator\Validation\RFCValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(272): Swift_Mime_Headers_MailboxHeader->assertValidAddress('leemax7894@gmail.com')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(117): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(74): Swift_Mime_Headers_MailboxHeader->setNameAddresses([...])
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(61): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel([...])
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(71): Swift_Mime_SimpleHeaderFactory->createMailboxHeader('To', [...])
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(323): Swift_Mime_SimpleHeaderSet->addMailboxHeader('To', [...])
+14 APPPATH/Models/EmailModel.php(136): Swift_Mime_SimpleMessage->setTo([...])
+15 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+16 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+17 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+18 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+19 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+20 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+21 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('gmail')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('leemax7894@gmail.com')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('leemax7894@gmail.com')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailParser.php(30): Egulias\EmailValidator\Parser->parse('leemax7894@gmail.com')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/RFCValidation.php(31): Egulias\EmailValidator\EmailParser->parse('leemax7894@gmail.com')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\RFCValidation->isValid('leemax7894@gmail.com', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(354): Egulias\EmailValidator\EmailValidator->isValid('leemax7894@gmail.com', Object(Egulias\EmailValidator\Validation\RFCValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(272): Swift_Mime_Headers_MailboxHeader->assertValidAddress('leemax7894@gmail.com')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(117): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(74): Swift_Mime_Headers_MailboxHeader->setNameAddresses([...])
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(61): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel([...])
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(71): Swift_Mime_SimpleHeaderFactory->createMailboxHeader('To', [...])
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(323): Swift_Mime_SimpleHeaderSet->addMailboxHeader('To', [...])
+14 APPPATH/Models/EmailModel.php(136): Swift_Mime_SimpleMessage->setTo([...])
+15 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+16 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+17 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+18 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+19 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+20 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+21 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('.')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('leemax7894@gmail.com')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('leemax7894@gmail.com')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailParser.php(30): Egulias\EmailValidator\Parser->parse('leemax7894@gmail.com')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/RFCValidation.php(31): Egulias\EmailValidator\EmailParser->parse('leemax7894@gmail.com')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\RFCValidation->isValid('leemax7894@gmail.com', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(354): Egulias\EmailValidator\EmailValidator->isValid('leemax7894@gmail.com', Object(Egulias\EmailValidator\Validation\RFCValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(272): Swift_Mime_Headers_MailboxHeader->assertValidAddress('leemax7894@gmail.com')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(117): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(74): Swift_Mime_Headers_MailboxHeader->setNameAddresses([...])
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(61): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel([...])
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(71): Swift_Mime_SimpleHeaderFactory->createMailboxHeader('To', [...])
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(323): Swift_Mime_SimpleHeaderSet->addMailboxHeader('To', [...])
+14 APPPATH/Models/EmailModel.php(136): Swift_Mime_SimpleMessage->setTo([...])
+15 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+16 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+17 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+18 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+19 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+20 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+21 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-11-25 04:00:21 --> [DEPRECATED] Function utf8_encode() is deprecated in APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailLexer.php on line 275.
+ 1 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(273): Egulias\EmailValidator\EmailLexer->getType('com')
+ 2 APPPATH/ThirdParty/swiftmailer/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php(100): Doctrine\Common\Lexer\AbstractLexer->scan('leemax7894@gmail.com')
+ 3 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Parser.php(37): Doctrine\Common\Lexer\AbstractLexer->setInput('leemax7894@gmail.com')
+ 4 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailParser.php(30): Egulias\EmailValidator\Parser->parse('leemax7894@gmail.com')
+ 5 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/Validation/RFCValidation.php(31): Egulias\EmailValidator\EmailParser->parse('leemax7894@gmail.com')
+ 6 APPPATH/ThirdParty/swiftmailer/vendor/egulias/email-validator/src/EmailValidator.php(37): Egulias\EmailValidator\Validation\RFCValidation->isValid('leemax7894@gmail.com', Object(Egulias\EmailValidator\EmailLexer))
+ 7 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(354): Egulias\EmailValidator\EmailValidator->isValid('leemax7894@gmail.com', Object(Egulias\EmailValidator\Validation\RFCValidation))
+ 8 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(272): Swift_Mime_Headers_MailboxHeader->assertValidAddress('leemax7894@gmail.com')
+ 9 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(117): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes([...])
+10 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/MailboxHeader.php(74): Swift_Mime_Headers_MailboxHeader->setNameAddresses([...])
+11 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderFactory.php(61): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel([...])
+12 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleHeaderSet.php(71): Swift_Mime_SimpleHeaderFactory->createMailboxHeader('To', [...])
+13 APPPATH/ThirdParty/swiftmailer/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMessage.php(323): Swift_Mime_SimpleHeaderSet->addMailboxHeader('To', [...])
+14 APPPATH/Models/EmailModel.php(136): Swift_Mime_SimpleMessage->setTo([...])
+15 APPPATH/Models/EmailModel.php(117): App\Models\EmailModel->sendEmailSwift('tls', [...])
+16 APPPATH/Models/EmailModel.php(60): App\Models\EmailModel->sendEmail([...])
+17 APPPATH/Models/CommonModel.php(37): App\Models\EmailModel->sendEmailContactMessage('AmeliaTaugh2954', 'emmaFough181487@gmail.com', '"Tempting tease longs for ecstasy."  Here  -- https://rb.gy/8rrwju?Joulpal')
+18 APPPATH/Controllers/HomeController.php(468): App\Models\CommonModel->addContactMessage()
+19 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\HomeController->contactPost()
+20 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+21 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 FCPATH/index.php(77): CodeIgniter\CodeIgniter->run()
+INFO - 2025-11-25 03:10:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 03:13:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 03:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 04:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 04:20:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 04:56:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 05:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:19:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:19:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:19:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:19:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:19:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:19:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:19:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:19:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:19:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:19:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:19:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:19:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:19:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:20:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:20:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:20:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:24:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:25:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:25:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:25:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:25:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:25:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:25:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:25:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:25:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:25:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:25:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:25:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:25:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:25:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:30:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:30:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:30:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:30:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:30:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:30:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:32:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:32:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:32:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:32:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:33:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:33:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 06:33:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 07:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:03:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:03:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:03:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:03:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:03:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:03:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:04:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:04:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:07:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:09:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:09:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:18:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:19:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:19:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:19:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 17:19:38 --> CSRF token verified.
+INFO - 2025-11-25 08:19:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:19:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:19:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:21:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:21:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:21:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:21:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:21:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:21:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:21:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:21:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:23:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:23:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 08:29:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 10:08:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 12:32:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 15:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 18:18:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 18:18:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 18:18:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 18:18:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 18:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 18:20:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 18:20:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 18:20:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 19:11:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2025-11-25 20:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
