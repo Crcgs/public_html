@@ -28,8 +28,14 @@ class PostModel extends BaseModel
             $langId = $this->activeLang->id;
         }
         $this->builder->resetQuery();
-        $this->builder->join('categories', 'categories.id = posts.category_id')->join('users', 'users.id = posts.user_id');
-        if ($joinTags) {
+       // $this->builder->join('categories', 'categories.id = posts.category_id')->join('users', 'users.id = posts.user_id');
+      
+      $this->builder->join('categories', 'categories.id = posts.category_id', 'left');
+        $this->builder->join('categories parent_category', 'parent_category.id = categories.parent_id', 'left');
+        $this->builder->join('users', 'users.id = posts.user_id');
+      
+      
+       if ($joinTags) {
             $this->builder->join('tags', 'tags.post_id = posts.id');
         }
         if ($fetchContent) {
@@ -37,8 +43,10 @@ class PostModel extends BaseModel
         } else {
             $this->builder->select('posts.id, posts.lang_id, posts.title, posts.title_slug, posts.summary, posts.category_id, posts.image_big, posts.image_slider, posts.image_mid, posts.image_small, posts.image_mime, posts.image_storage, posts.slider_order, posts.featured_order, posts.post_type, posts.image_url, posts.user_id, posts.pageviews, posts.post_url, posts.updated_at, posts.created_at');
         }
-        $this->builder->select('categories.name AS category_name, categories.name_slug AS category_slug , categories.color AS category_color, users.username AS author_username, users.slug AS author_slug,(SELECT COUNT(comments.id) FROM comments WHERE posts.id = comments.post_id AND comments.parent_id = 0 AND comments.status = 1) AS comment_count');
-        if ($isPreview == false) {
+       // $this->builder->select('categories.name AS category_name, categories.name_slug AS category_slug , categories.color AS category_color, users.username AS author_username, users.slug AS author_slug,(SELECT COUNT(comments.id) FROM comments WHERE posts.id = comments.post_id AND comments.parent_id = 0 AND comments.status = 1) AS comment_count');
+      $this->builder->select('categories.name AS subcategory_name,categories.name_slug AS subcategory_slug,categories.color AS category_color,parent_category.name AS parent_category_name,parent_category.name_slug AS parent_category_slug,users.username AS author_username,users.slug AS author_slug, (SELECT COUNT(comments.id)  FROM comments WHERE posts.id = comments.post_id AND comments.parent_id = 0 AND comments.status = 1) AS comment_count');
+      
+       if ($isPreview == false) {
             $this->builder->where('posts.is_scheduled', 0)->where('posts.visibility', 1)->where('posts.status = 1')->where('posts.lang_id', cleanNumber($langId));
         }
     }

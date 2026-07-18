@@ -103,7 +103,16 @@ $routes->get($customRoutes->admin . '/scheduled-posts', 'PostController::schedul
 $routes->get($customRoutes->admin . '/drafts', 'PostController::drafts');
 $routes->get($customRoutes->admin . '/bulk-post-upload', 'PostController::bulkPostUpload');
 $routes->get($customRoutes->admin . '/edit-post/(:num)', 'PostController::editPost/$1');
+// $routes->get($customRoutes->admin . '/bulk-glossory-upload/', 'PostController::bulkPostUpload');
 
+//glossary
+
+// Bulk Glossary Upload
+//$routes->get($customRoutes->admin . '/bulk_data_add_glossary', 'PostController::bulkPostUpload');
+
+$routes->get($customRoutes->admin . '/bulk-glossary-upload', 'AdminController::bulkGlossaryUpload');
+$routes->post($customRoutes->admin . '/download-csv-file', 'AdminController::downloadCSVFileGlossary');
+//$routes->post($customRoutes->admin . '/bulk-glossary-upload', 'AdminController::bulkGlossaryUploadPost');
 
 //plans
 
@@ -159,10 +168,18 @@ $routes->get($customRoutes->admin . '/ad-spaces', 'AdminController::adSpaces');
 $routes->get($customRoutes->admin . '/users', 'AdminController::users');
 $routes->get($customRoutes->admin . '/edit-user/(:num)', 'AdminController::editUser/$1');
 $routes->get($customRoutes->admin . '/administrators', 'AdminController::administrators');
-$routes->get($customRoutes->admin . '/add-user', 'AdminController::addUser');
+$routes->get($customRoutes->admin . '/user-logs', 'AdminController::userLogs');
+
+
 //roles permissions
 $routes->get($customRoutes->admin . '/roles-permissions', 'AdminController::rolesPermissions');
 $routes->get($customRoutes->admin . '/edit-role/(:num)', 'AdminController::editRole/$1');
+
+
+$routes->get($customRoutes->admin . '/add-role', 'AdminController::addRole');
+$routes->post($customRoutes->admin . '/add-role-post', 'AdminController::addRolePost');
+
+
 //seo tools
 $routes->get($customRoutes->admin . '/seo-tools', 'AdminController::seoTools');
 //storage
@@ -179,10 +196,38 @@ $routes->get($customRoutes->admin . '/font-settings', 'AdminController::fontSett
 $routes->get($customRoutes->admin . '/edit-font/(:num)', 'AdminController::editFont/$1');
 $routes->get($customRoutes->admin . '/social-login-settings', 'AdminController::socialLoginSettings');
 $routes->get($customRoutes->admin . '/general-settings', 'AdminController::generalSettings');
+
+/**
+ * weekly digest
+ */
+
+$routes->get($customRoutes->admin. '/weekly-digest', 'AdminController::weeklyDigest');
+
+
+
+
+/**
+ * Events admin
+ * 
+ */
+$routes->get($customRoutes->admin. '/event', 'AdminController::event');
+$routes->get($customRoutes->admin. '/add_event', 'AdminController::addEvent');
+$routes->post($customRoutes->admin . '/save-event-data', 'AdminController::addEventPost');
+
+
+$routes->get('events', 'EventController::index');
+$routes->get('event/(:segment)', 'EventController::detail/$1');
+
+$routes->get('event/register/(:num)', 'EventController::register/$1');
+$routes->post('event/register-post', 'EventController::registerPost');
+
+
+
 //language
 $routes->get($customRoutes->admin . '/language-settings', 'LanguageController::languages');
 $routes->get($customRoutes->admin . '/edit-language/(:num)', 'LanguageController::editLanguage/$1');
 $routes->get($customRoutes->admin . '/edit-translations/(:num)', 'LanguageController::editTranslations/$1');
+
 
 /*
  * --------------------------------------------------------------------

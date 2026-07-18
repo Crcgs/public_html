@@ -137,6 +137,8 @@ class HomeController extends BaseController
         $data['description'] = 'Latest News';
         $data['keywords'] = 'Latest News';
         $data['posts'] = $post = $this->postModel->getPostsByColum('posts.latest_news',1); 
+
+
         echo loadView('partials/_header', $data);
         echo loadView('post/latestNews', $data);
         echo loadView('partials/_footer', $data);
@@ -147,7 +149,10 @@ class HomeController extends BaseController
         $data['title'] = 'Latest News';
         $data['description'] = 'Latest News';
         $data['keywords'] = 'Latest News';
-        $data['posts'] = $post = $this->postModel->getPostsByColum('posts.knowledge_articles',1); 
+        $data['posts'] = $post = $this->postModel->getPostsByColum('posts.knowledge_articles',1);
+        
+        $data['posts'] = $this->postModel->getPostsByColum('posts.knowledge_articles', 1);
+
         echo loadView('partials/_header', $data);
         echo loadView('post/knowledge-articles', $data);
         echo loadView('partials/_footer', $data);
@@ -183,12 +188,16 @@ public function glossary()
 {
     $glossaryModel = new \App\Models\GlossaryModel();
 
-
-     $id = $this->request->getGet('id');
+    // Glossary Detail
+    $id = $this->request->getGet('id');
 
     if (!empty($id)) {
 
         $item = $glossaryModel->find($id);
+
+        if (!$item) {
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
+        }
 
         $data['title'] = $item->word;
         $data['description'] = $item->dictionary;
@@ -197,27 +206,51 @@ public function glossary()
 
         echo loadView('partials/_header', $data);
         echo loadView('post/glossary_detail', $data);
-        echo loadView('partials/_footer', $data);
+        echo loadView('partials/_footer');
         return;
+    }
+
+    // Glossary List
+    $data['title'] = "Glossary";
+    $data['description'] = "Glossary";
+    $data['keywords'] = "Glossary";
+
+    $letter = strtoupper($this->request->getGet('letter'));
+    $all = $this->request->getGet('all');
+
+    if (!empty($letter)) {
+
+        if ($all == 1) {
+
+            // Show ALL words of selected letter
+            $data['glossaries'] = $glossaryModel
+                ->like('word', $letter, 'after')
+                ->orderBy('word', 'ASC')
+                ->findAll();
+
+        } else {
+
+            // Show first 10 words of selected letter
+            $data['glossaries'] = $glossaryModel
+                ->like('word', $letter, 'after')
+                ->orderBy('word', 'ASC')
+                ->findAll(10);
+
         }
 
-    $data['title'] = 'Glossary';
-    $data['description'] = 'Glossary';
-    $data['keywords'] = 'Glossary';
+    } else {
 
-    $data['glossaries'] = $glossaryModel->findAll();
+        // Home page: all words ordered
+        $data['glossaries'] = $glossaryModel
+            ->orderBy('word', 'ASC')
+            ->findAll();
 
-$data['glossaries'] = $glossaryModel
-    ->orderBy('word', 'ASC')
-    ->findAll();
+    }
 
     echo loadView('partials/_header', $data);
     echo loadView('post/glossary', $data);
-    echo loadView('partials/_footer', $data);
-
-
+    echo loadView('partials/_footer');
 }
-
 
 
  //glossary details

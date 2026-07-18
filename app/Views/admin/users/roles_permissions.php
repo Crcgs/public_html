@@ -8,6 +8,13 @@
         <div class="left">
             <h3 class="box-title"><?= $title; ?></h3>
         </div>
+
+        <div class="right">
+        <a href="<?= adminUrl('add-role'); ?>" class="btn btn-success">
+            <i class="fa fa-plus"></i>&nbsp;Add New Role
+        </a>
+
+    </div>
     </div>
     <div class="box-body">
         <div class="row">

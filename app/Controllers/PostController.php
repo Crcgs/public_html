@@ -9,6 +9,8 @@ use App\Models\PostItemModel;
 use App\Models\QuizModel;
 use App\Models\TagModel;
 use App\Models\UploadModel;
+use App\Models\EmailModel;
+use App\Models\NewsletterModel;
 
 class PostController extends BaseAdminController
 {
@@ -441,12 +443,50 @@ class PostController extends BaseAdminController
             if ($this->postAdminModel->approvePost($post)) {
                 $result = true;
             }
-        } elseif ($option == 'publish') {
-            checkPermission('add_post');
-            if ($this->postAdminModel->publishPost($post)) {
-                $result = true;
+        }
+        
+        // elseif ($option == 'publish') {
+        //     checkPermission('add_post');
+        //     if ($this->postAdminModel->publishPost($post)) {
+        //         $result = true;
+        //     }
+        // } 
+
+        elseif ($option == 'publish') {
+    checkPermission('add_post');
+
+    if ($this->postAdminModel->publishPost($post)) {
+
+        // Send email to subscribers
+        $emailModel = new EmailModel();
+        $newsletterModel = new NewsletterModel();
+
+        $subscribers = $newsletterModel->getSubscribers();
+
+        $postUrl = generatePostURL($post);
+
+        $message = "
+            <h2>{$post->title}</h2>
+            <p>A new article has been published.</p>
+            <p><a href='{$postUrl}'>Read Full Article</a></p>
+        ";
+
+        if (!empty($subscribers)) {
+            foreach ($subscribers as $subscriber) {
+                $emailModel->sendEmailNewsletter(
+                    $subscriber,
+                    $post->title,
+                    $message
+                );
             }
-        } elseif ($option == 'publish_draft') {
+        }
+
+        $result = true;
+    }
+}
+        
+        
+        elseif ($option == 'publish_draft') {
             checkPermission('add_post');
             if ($this->postAdminModel->publishDraft($post)) {
                 $result = true;

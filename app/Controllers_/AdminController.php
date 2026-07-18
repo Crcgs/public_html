@@ -834,6 +834,52 @@ class AdminController extends BaseAdminController
         }
     }
 
+
+
+    /**
+     * Send weekly Digest
+     */
+public function weeklyDigest()
+{
+    checkAdmin();
+
+    $postModel = new \App\Models\PostModel();
+
+    // Last 7 days posts
+    $posts = $postModel
+        ->where('status', 1)
+        ->where('created_at >=', date('Y-m-d H:i:s', strtotime('-7 days')))
+        ->orderBy('created_at','DESC')
+        ->findAll();
+
+    $userModel = new \App\Models\AuthModel();
+
+    $users = $userModel->getUsers();
+
+    foreach($users as $user){
+
+        $message = view('email/weekly_digest',[
+            'user'=>$user,
+            'posts'=>$posts
+        ]);
+
+        sendEmail(
+            $user->email,
+            "Your Weekly Digest",
+            $message
+        );
+    }
+
+    session()->setFlashdata('success','Weekly Digest Sent Successfully');
+
+    return redirect()->back();
+}
+
+
+
+
+
+
     /**
      * Ads
      */
@@ -1171,6 +1217,74 @@ class AdminController extends BaseAdminController
         }
         return redirect()->to(adminUrl('roles-permissions'));
     }
+
+
+     /**
+     * Add Role
+     */
+
+
+ public function addRole()
+{
+    checkAdmin();
+
+    $data['title'] = "Add New Role";
+
+    $role = new stdClass();
+
+    $role->role = "";
+    $role->role_name = serialize([]);
+
+    $role->admin_panel = 0;
+    $role->add_post = 0;
+    $role->manage_all_posts = 0;
+    $role->navigation = 0;
+    $role->pages = 0;
+    $role->rss_feeds = 0;
+    $role->categories = 0;
+    $role->widgets = 0;
+    $role->polls = 0;
+    $role->gallery = 0;
+    $role->comments_contact = 0;
+    $role->newsletter = 0;
+    $role->ad_spaces = 0;
+    $role->users = 0;
+    $role->plans = 0;
+    $role->add_plan = 0;
+    $role->seo_tools = 0;
+    $role->settings = 0;
+
+    $data['role'] = $role;
+
+    echo view('admin/includes/_header', $data);
+    echo view('admin/users/add_role', $data);
+    echo view('admin/includes/_footer');
+}
+
+public function addRolePost()
+{
+    //  checkAdmin();
+
+    // if ($this->authModel->addRole()) {
+    //     $this->session->setFlashdata('success', trans("msg_added"));
+    // } else {
+    //     $this->session->setFlashdata('error', trans("msg_error"));
+    // }
+
+    // return redirect()->to(adminUrl('roles-permissions'));
+
+        die("addRolePost reached");
+
+}
+
+//test
+
+public function test()
+{
+    die("Controller is working");
+}
+
+
 
     /**
      * Seo Tools

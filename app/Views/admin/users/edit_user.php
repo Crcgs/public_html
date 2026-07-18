@@ -108,17 +108,17 @@
                         <input type="text" class="form-control form-input" name="instagram_url" placeholder="Instagram <?= trans('url'); ?>" value="<?= esc($user->instagram_url); ?>">
                     </div>
 
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <input type="text" class="form-control form-input" name="pinterest_url" placeholder="Pinterest <?= trans('url'); ?>" value="<?= esc($user->pinterest_url); ?>">
-                    </div>
+                    </div> -->
 
                     <div class="form-group">
                         <input type="text" class="form-control form-input" name="linkedin_url" placeholder="LinkedIn <?= trans('url'); ?>" value="<?= esc($user->linkedin_url); ?>">
                     </div>
 
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <input type="text" class="form-control form-input" name="vk_url" placeholder="VK <?= trans('url'); ?>" value="<?= esc($user->vk_url); ?>">
-                    </div>
+                    </div> -->
 
                     <div class="form-group">
                         <input type="text" class="form-control form-input" name="youtube_url" placeholder="Youtube <?= trans('url'); ?>" value="<?= esc($user->youtube_url); ?>">

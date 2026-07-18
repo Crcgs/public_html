@@ -1,0 +1,47 @@
+INFO - 2026-07-16 05:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-16 05:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-07-16 05:40:11 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-07-16 05:40:33 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-07-16 05:40:33 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-07-16 05:40:50 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-07-16 05:40:50 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-07-16 05:41:24 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-07-16 05:41:24 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-07-16 05:41:33 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-07-16 05:41:33 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2026-07-16 05:48:48 --> mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\public_html\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\public_html\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT RELEASE_...', 0)
+#1 C:\xampp\htdocs\public_html\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT RELEASE_...')
+#2 C:\xampp\htdocs\public_html\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT RELEASE_...')
+#3 C:\xampp\htdocs\public_html\system\Session\Handlers\Database\MySQLiHandler.php(45): CodeIgniter\Database\BaseConnection->query('SELECT RELEASE_...')
+#4 C:\xampp\htdocs\public_html\system\Session\Handlers\DatabaseHandler.php(252): CodeIgniter\Session\Handlers\Database\MySQLiHandler->releaseLock()
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->close()
+#6 {main}
+ERROR - 2026-07-16 05:48:48 --> mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\public_html\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\public_html\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT RELEASE_...', 0)
+#1 C:\xampp\htdocs\public_html\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT RELEASE_...')
+#2 C:\xampp\htdocs\public_html\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT RELEASE_...')
+#3 C:\xampp\htdocs\public_html\system\Session\Handlers\Database\MySQLiHandler.php(45): CodeIgniter\Database\BaseConnection->query('SELECT RELEASE_...')
+#4 C:\xampp\htdocs\public_html\system\Session\Handlers\DatabaseHandler.php(252): CodeIgniter\Session\Handlers\Database\MySQLiHandler->releaseLock()
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->close()
+#6 {main}

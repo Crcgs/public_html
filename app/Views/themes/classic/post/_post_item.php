@@ -1,4 +1,4 @@
-<div class="post-item<?= checkPostImg($post, 'class'); ?>">
+ <div class="post-item<?= checkPostImg($post, 'class'); ?>">
    
     <?php if (checkPostImg($post)): ?>
         <div class="post-item-image">
@@ -15,4 +15,6 @@
 <?php endif; ?>
 
     <p class="description"><?= esc(characterLimiter($post->summary, 80, '...')); ?></p>
-</div>
+</div> 
+
+

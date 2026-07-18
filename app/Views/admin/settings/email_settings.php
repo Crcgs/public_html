@@ -184,11 +184,26 @@
                         <input type="text" class="form-control" name="email" placeholder="<?= trans('email'); ?>" required>
                     </div>
                 </div>
+                
 
                 <div class="box-footer">
                     <button type="submit" name="submit" value="contact" class="btn btn-primary pull-right"><?= trans('send_email'); ?></button>
                 </div>
             </div>
+            <div class="col-lg-6 col-md-12">
+    <div class="box box-primary">
+        <div class="box-header with-border">
+            <h3 class="box-title">Bulk Email</h3>
+            <small>Send email to all registered users</small>
+        </div>
+
+        <div class="box-body text-center">
+            <a href="<?= adminUrl(); ?>/bulk-email" class="btn btn-success btn-lg">
+                <i class="fa fa-envelope"></i> Send Bulk Email
+            </a>
+        </div>
+    </div>
+</div>
         </div>
     </form>
 </div>

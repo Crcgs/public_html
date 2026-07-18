@@ -11,22 +11,32 @@
             <div id="content" class="col-sm-8">
                 <div class="row">
                     <div class="col-sm-12"><h1 class="page-title">Knowledge Articles</h1></div>
-                    <?php $count = 0;
-                    if (!empty($posts)):
-                        foreach ($posts as $post):
-                            if ($count != 0 && $count % 2 == 0): ?>
-                                <div class="col-sm-12"></div>
-                            <?php endif; ?>
-                            <div class="col-sm-6 col-xs-12">
-                                <?= loadView("post/_post_item", ["post" => $post, 'showLabel' => true]); ?>
-                            </div>
-                            <?php if ($count == 1):
-                            echo loadView('partials/_ad_spaces', ['adSpace' => 'posts_top', 'class' => 'p-b-30']);
-                        endif;
-                            $count++;
-                        endforeach;
-                    endif;
-                    echo loadView('partials/_ad_spaces', ['adSpace' => 'posts_bottom', 'class' => '']); ?>
+                   <?php
+// Group posts by category
+$groupedPosts = [];
+
+foreach ($posts as $post) {
+
+    $groupedPosts[$post->parent_category_name][] = $post;
+
+
+}
+
+foreach ($groupedPosts as $categoryName => $categoryPosts):
+?>
+
+    <div class="col-sm-12">
+        <h2 class="category-title"><?= esc($categoryName); ?></h2>
+        <hr>
+    </div>
+
+    <?php foreach ($categoryPosts as $post): ?>
+        <div class="col-sm-6 col-xs-12">
+            <?= loadView("post/_post_item", ["post" => $post, "showLabel" => false]); ?>
+        </div>
+    <?php endforeach; ?>
+
+<?php endforeach; ?>
                     
                 </div>
             </div>

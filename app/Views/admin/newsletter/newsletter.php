@@ -88,6 +88,12 @@
                     <button type="submit" name="submit" value="subscribers" class="btn btn-lg btn-block btn-info"><?= trans("send_email"); ?>&nbsp;&nbsp;<i class="fa fa-send"></i></button>
                 </div>
             </form>
+           <a href="<?= adminUrl('weekly-digest'); ?>"
+   class="btn btn-success btn-lg btn-block">
+    <i class="fa fa-newspaper-o"></i>
+    Send Weekly Digest
+</a>
+
         </div>
     </div>
 </div>

@@ -327,6 +327,10 @@ class AuthController extends BaseController
         return redirect()->to(generateURL('forgot_password'));
     }
 
+
+
+    
+
     /**
      * Reset Password
      */

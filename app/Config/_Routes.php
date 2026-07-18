@@ -112,6 +112,7 @@ $routes->get($customRoutes->admin . '/bulk-post-upload', 'PostController::bulkPo
 $routes->get($customRoutes->admin . '/edit-post/(:num)', 'PostController::editPost/$1');
 
 
+
 //plans
 
 $routes->get($customRoutes->admin .'/plans', 'PlanController::index');
@@ -162,14 +163,31 @@ $routes->get($customRoutes->admin . '/reward-system/add-payout', 'RewardControll
 $routes->get($customRoutes->admin . '/reward-system/pageviews', 'RewardController::pageviews');
 //ad spaces
 $routes->get($customRoutes->admin . '/ad-spaces', 'AdminController::adSpaces');
+
+
 //users
 $routes->get($customRoutes->admin . '/users', 'AdminController::users');
 $routes->get($customRoutes->admin . '/edit-user/(:num)', 'AdminController::editUser/$1');
 $routes->get($customRoutes->admin . '/administrators', 'AdminController::administrators');
 $routes->get($customRoutes->admin . '/add-user', 'AdminController::addUser');
+
 //roles permissions
+
+
 $routes->get($customRoutes->admin . '/roles-permissions', 'AdminController::rolesPermissions');
 $routes->get($customRoutes->admin . '/edit-role/(:num)', 'AdminController::editRole/$1');
+
+$routes->get($customRoutes->admin . '/add-role', 'AdminController::addRole');
+$routes->post($customRoutes->admin . '/add-role-post', 'AdminController::addRolePost');
+
+$routes->get('test', 'AdminController::test');
+
+
+//$routes->get('admin/add-role', 'AdminController::addRole');
+//$routes->post('admin/add-role-post', 'AdminController::addRolePost');
+
+
+
 //seo tools
 $routes->get($customRoutes->admin . '/seo-tools', 'AdminController::seoTools');
 //storage

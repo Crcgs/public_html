@@ -7342,4 +7342,55 @@ form select.error {
     .featured-slider .featured-slider-item {
         height: 240px;
     }
+
+
+/* ====================================
+   CRCGS Footer
+==================================== */
+
+.crcgs-hp-footer-bottom{
+    background:#0B2B45;
+    padding:20px 0;
+    color:#fff;
+}
+
+.crcgs-hp-footer-bottom .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.crcgs-hp-footer-bottom span{
+    font-size:14px;
+}
+
+.crcgs-hp-footer-bottom-links{
+    display:flex;
+    gap:20px;
+}
+
+.crcgs-hp-footer-bottom-links a{
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.crcgs-hp-footer-bottom-links a:hover{
+    color:#19bc9c;
+}
+
+@media(max-width:768px){
+
+.crcgs-hp-footer-bottom .container{
+    flex-direction:column;
+    text-align:center;
+}
+
+.crcgs-hp-footer-bottom-links{
+    margin-top:15px;
+}
+}
+
+
 }

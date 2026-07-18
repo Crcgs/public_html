@@ -1,0 +1,793 @@
+INFO - 2026-07-13 00:01:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2026-07-13 00:01:26 --> mysqli_sql_exception: Table 'rcgerdata.events' doesn't exist in C:\xampp\htdocs\public_html\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\public_html\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\public_html\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\public_html\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\public_html\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\public_html\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\public_html\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\public_html\app\Controllers\AdminController.php(904): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\public_html\system\CodeIgniter.php(932): App\Controllers\AdminController->event()
+#8 C:\xampp\htdocs\public_html\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\xampp\htdocs\public_html\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\public_html\index.php(86): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2026-07-13 00:01:26 --> Table 'rcgerdata.events' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `events`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `events`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `events`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `events`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AdminController.php(904): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->event()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 00:02:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-07-13 00:02:50 --> Undefined variable $title
+in APPPATH\Views\admin\includes\_header.php on line 6.
+ 1 APPPATH\Views\admin\includes\_header.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\public_html\\app\\Views\\admin\\includes\\_header.php', 6)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\public_html\\app\\Views\\admin\\includes\\_header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/includes/_header', [], true)
+ 5 APPPATH\Controllers\AdminController.php(907): view('admin/includes/_header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->event()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 00:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:03:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-07-13 00:03:24 --> Undefined variable $title
+in APPPATH\Views\admin\includes\_header.php on line 6.
+ 1 APPPATH\Views\admin\includes\_header.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\public_html\\app\\Views\\admin\\includes\\_header.php', 6)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\public_html\\app\\Views\\admin\\includes\\_header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/includes/_header', [], true)
+ 5 APPPATH\Controllers\AdminController.php(907): view('admin/includes/_header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->event()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 00:05:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-07-13 00:05:40 --> Undefined variable $title
+in APPPATH\Views\admin\includes\_header.php on line 6.
+ 1 APPPATH\Views\admin\includes\_header.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\public_html\\app\\Views\\admin\\includes\\_header.php', 6)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\public_html\\app\\Views\\admin\\includes\\_header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/includes/_header', [], true)
+ 5 APPPATH\Controllers\AdminController.php(907): view('admin/includes/_header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->event()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 00:06:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-07-13 00:06:02 --> Invalid file: "{0}"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/layout/main.php')
+ 2 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('admin/layout/main', [], true)
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/event/event', [], true)
+ 4 APPPATH\Controllers\AdminController.php(908): view('admin/event/event', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->event()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 00:07:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-07-13 00:07:25 --> Invalid file: "{0}"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/layout/main.php')
+ 2 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('admin/layout/main', [], true)
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/event/event', [], true)
+ 4 APPPATH\Controllers\AdminController.php(913): view('admin/event/event', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->event()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 00:07:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:07:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-07-13 00:07:31 --> Invalid file: "{0}"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/layout/main.php')
+ 2 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('admin/layout/main', [], true)
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/event/event', [], true)
+ 4 APPPATH\Controllers\AdminController.php(913): view('admin/event/event', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->event()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 00:07:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-07-13 00:07:35 --> Invalid file: "{0}"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/layout/main.php')
+ 2 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('admin/layout/main', [], true)
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/event/event', [], true)
+ 4 APPPATH\Controllers\AdminController.php(913): view('admin/event/event', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->event()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 00:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-07-13 00:12:23 --> Undefined variable $title
+in APPPATH\Views\admin\includes\_header.php on line 6.
+ 1 APPPATH\Views\admin\includes\_header.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\public_html\\app\\Views\\admin\\includes\\_header.php', 6)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\public_html\\app\\Views\\admin\\includes\\_header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/includes/_header', [], true)
+ 5 APPPATH\Controllers\AdminController.php(908): view('admin/includes/_header', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->event()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 00:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:13:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:20:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:20:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:20:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:20:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:20:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:20:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:26:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:26:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:26:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:28:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:28:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:28:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:28:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:29:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:29:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:29:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:29:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:29:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:29:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:29:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:33:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:33:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:35:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:35:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:35:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:35:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:45:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:46:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:49:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:49:05 --> CSRF token verified.
+INFO - 2026-07-13 00:55:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 00:59:54 --> CSRF token verified.
+INFO - 2026-07-13 00:59:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:00:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:00:16 --> CSRF token verified.
+INFO - 2026-07-13 01:03:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:03:46 --> CSRF token verified.
+INFO - 2026-07-13 01:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-07-13 01:03:49 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Controllers\AdminController.php on line 939.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\public_html\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 01:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:04:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:04:51 --> CSRF token verified.
+INFO - 2026-07-13 01:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:05:25 --> CSRF token verified.
+INFO - 2026-07-13 01:16:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:16:59 --> CSRF token verified.
+INFO - 2026-07-13 01:17:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:17:10 --> CSRF token verified.
+INFO - 2026-07-13 01:17:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:17:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:31:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:32:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:32:46 --> CSRF token verified.
+INFO - 2026-07-13 01:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:33:20 --> CSRF token verified.
+INFO - 2026-07-13 01:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:33:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:33:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:33:31 --> CSRF token verified.
+INFO - 2026-07-13 01:33:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:33:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:37:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:38:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:38:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:38:37 --> CSRF token verified.
+INFO - 2026-07-13 01:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:38:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:39:30 --> CSRF token verified.
+INFO - 2026-07-13 01:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:40:00 --> CSRF token verified.
+INFO - 2026-07-13 01:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:40:05 --> CSRF token verified.
+INFO - 2026-07-13 01:46:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:46:54 --> CSRF token verified.
+INFO - 2026-07-13 01:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:47:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:47:07 --> CSRF token verified.
+INFO - 2026-07-13 01:47:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:47:40 --> CSRF token verified.
+INFO - 2026-07-13 01:51:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:53:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:53:01 --> CSRF token verified.
+INFO - 2026-07-13 01:53:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:53:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:53:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:53:12 --> CSRF token verified.
+INFO - 2026-07-13 01:53:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:53:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:53:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:54:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:54:04 --> CSRF token verified.
+INFO - 2026-07-13 01:54:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:54:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:54:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:54:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:54:18 --> CSRF token verified.
+INFO - 2026-07-13 01:54:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:54:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:57:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 01:57:29 --> CSRF token verified.
+INFO - 2026-07-13 02:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:03:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:04:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:04:31 --> CSRF token verified.
+INFO - 2026-07-13 02:19:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:19:13 --> CSRF token verified.
+INFO - 2026-07-13 02:19:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:19:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:21:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:30:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:33:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:33:00 --> CSRF token verified.
+INFO - 2026-07-13 02:33:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-07-13 02:33:00 --> Undefined property: stdClass::$registered_users
+in APPPATH\Views\admin\event\event.php on line 141.
+ 1 APPPATH\Views\admin\event\event.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$registered_users', 'C:\\xampp\\htdocs\\public_html\\app\\Views\\admin\\event\\event.php', 141)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\public_html\\app\\Views\\admin\\event\\event.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/event/event', [], true)
+ 5 APPPATH\Controllers\AdminController.php(913): view('admin/event/event', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->event()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 02:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-07-13 02:38:11 --> Undefined property: stdClass::$registered_users
+in APPPATH\Views\admin\event\event.php on line 141.
+ 1 APPPATH\Views\admin\event\event.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$registered_users', 'C:\\xampp\\htdocs\\public_html\\app\\Views\\admin\\event\\event.php', 141)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\public_html\\app\\Views\\admin\\event\\event.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/event/event', [], true)
+ 5 APPPATH\Controllers\AdminController.php(913): view('admin/event/event', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->event()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 02:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:38:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:38:19 --> CSRF token verified.
+ERROR - 2026-07-13 02:38:19 --> mysqli_sql_exception: Duplicate entry 'the-event-guru' for key 'slug' in C:\xampp\htdocs\public_html\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\public_html\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 C:\xampp\htdocs\public_html\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 C:\xampp\htdocs\public_html\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 C:\xampp\htdocs\public_html\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 C:\xampp\htdocs\public_html\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\public_html\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\public_html\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\public_html\app\Controllers\AdminController.php(983): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\public_html\system\CodeIgniter.php(932): App\Controllers\AdminController->addEventPost()
+#9 C:\xampp\htdocs\public_html\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#10 C:\xampp\htdocs\public_html\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\public_html\index.php(86): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2026-07-13 02:38:19 --> Duplicate entry 'the-event-guru' for key 'slug'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `events` (`title`, `slug`, `short_description`, `description`, `image`, `banner_image`, `event_date`, `start_time`, `end_time`, `location`, `google_map`, `max_seats`, `registration_fee`, `organizer_name`, `organizer_email`, `organizer_phone`, `status`, `created_at`, `updated_at`) VALUES (\'The Event Guru\', \'the-event-guru\', \'fwmksmfl\', \'sfmklsmf\', \'uploads/events/1783890499_cbeef836328c637bf52a.png\', \'uploads/events/1783890499_3c7d6136be336fee8f05.png\', \'2026-07-15\', \'02:32\', \'02:34\', \'berhampur\', \'https://djkgnjdfjjb df\', \'1000\', \'2000\', \'vfdm fd\', \'admin@gmail.com\', \'7844804463\', \'1\', \'2026-07-13 02:38:19\', \'2026-07-13 02:38:19\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `events` (`title`, `slug`, `short_description`, `description`, `image`, `banner_image`, `event_date`, `start_time`, `end_time`, `location`, `google_map`, `max_seats`, `registration_fee`, `organizer_name`, `organizer_email`, `organizer_phone`, `status`, `created_at`, `updated_at`) VALUES (\'The Event Guru\', \'the-event-guru\', \'fwmksmfl\', \'sfmklsmf\', \'uploads/events/1783890499_cbeef836328c637bf52a.png\', \'uploads/events/1783890499_3c7d6136be336fee8f05.png\', \'2026-07-15\', \'02:32\', \'02:34\', \'berhampur\', \'https://djkgnjdfjjb df\', \'1000\', \'2000\', \'vfdm fd\', \'admin@gmail.com\', \'7844804463\', \'1\', \'2026-07-13 02:38:19\', \'2026-07-13 02:38:19\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `events` (`title`, `slug`, `short_description`, `description`, `image`, `banner_image`, `event_date`, `start_time`, `end_time`, `location`, `google_map`, `max_seats`, `registration_fee`, `organizer_name`, `organizer_email`, `organizer_phone`, `status`, `created_at`, `updated_at`) VALUES (\'The Event Guru\', \'the-event-guru\', \'fwmksmfl\', \'sfmklsmf\', \'uploads/events/1783890499_cbeef836328c637bf52a.png\', \'uploads/events/1783890499_3c7d6136be336fee8f05.png\', \'2026-07-15\', \'02:32\', \'02:34\', \'berhampur\', \'https://djkgnjdfjjb df\', \'1000\', \'2000\', \'vfdm fd\', \'admin@gmail.com\', \'7844804463\', \'1\', \'2026-07-13 02:38:19\', \'2026-07-13 02:38:19\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `events` (`title`, `slug`, `short_description`, `description`, `image`, `banner_image`, `event_date`, `start_time`, `end_time`, `location`, `google_map`, `max_seats`, `registration_fee`, `organizer_name`, `organizer_email`, `organizer_phone`, `status`, `created_at`, `updated_at`) VALUES (:title:, :slug:, :short_description:, :description:, :image:, :banner_image:, :event_date:, :start_time:, :end_time:, :location:, :google_map:, :max_seats:, :registration_fee:, :organizer_name:, :organizer_email:, :organizer_phone:, :status:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\AdminController.php(983): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->addEventPost()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 02:40:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:40:50 --> CSRF token verified.
+ERROR - 2026-07-13 02:40:50 --> mysqli_sql_exception: Duplicate entry 'the-event-guru' for key 'slug' in C:\xampp\htdocs\public_html\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\public_html\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 C:\xampp\htdocs\public_html\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 C:\xampp\htdocs\public_html\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 C:\xampp\htdocs\public_html\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 C:\xampp\htdocs\public_html\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\public_html\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\public_html\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\public_html\app\Controllers\AdminController.php(983): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\public_html\system\CodeIgniter.php(932): App\Controllers\AdminController->addEventPost()
+#9 C:\xampp\htdocs\public_html\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#10 C:\xampp\htdocs\public_html\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\public_html\index.php(86): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2026-07-13 02:40:50 --> Duplicate entry 'the-event-guru' for key 'slug'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `events` (`title`, `slug`, `short_description`, `description`, `image`, `banner_image`, `event_date`, `start_time`, `end_time`, `location`, `google_map`, `max_seats`, `registration_fee`, `organizer_name`, `organizer_email`, `organizer_phone`, `status`, `created_at`, `updated_at`) VALUES (\'The Event Guru\', \'the-event-guru\', \'fwmksmfl\', \'sfmklsmf\', \'uploads/events/1783890650_ff01346c36aa284b6ba0.png\', \'uploads/events/1783890650_6cdffea9e497cfa1d5f8.png\', \'2026-07-15\', \'02:32\', \'02:34\', \'berhampur\', \'https://djkgnjdfjjb df\', \'1000\', \'2000\', \'vfdm fd\', \'admin@gmail.com\', \'7844804463\', \'1\', \'2026-07-13 02:40:50\', \'2026-07-13 02:40:50\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `events` (`title`, `slug`, `short_description`, `description`, `image`, `banner_image`, `event_date`, `start_time`, `end_time`, `location`, `google_map`, `max_seats`, `registration_fee`, `organizer_name`, `organizer_email`, `organizer_phone`, `status`, `created_at`, `updated_at`) VALUES (\'The Event Guru\', \'the-event-guru\', \'fwmksmfl\', \'sfmklsmf\', \'uploads/events/1783890650_ff01346c36aa284b6ba0.png\', \'uploads/events/1783890650_6cdffea9e497cfa1d5f8.png\', \'2026-07-15\', \'02:32\', \'02:34\', \'berhampur\', \'https://djkgnjdfjjb df\', \'1000\', \'2000\', \'vfdm fd\', \'admin@gmail.com\', \'7844804463\', \'1\', \'2026-07-13 02:40:50\', \'2026-07-13 02:40:50\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `events` (`title`, `slug`, `short_description`, `description`, `image`, `banner_image`, `event_date`, `start_time`, `end_time`, `location`, `google_map`, `max_seats`, `registration_fee`, `organizer_name`, `organizer_email`, `organizer_phone`, `status`, `created_at`, `updated_at`) VALUES (\'The Event Guru\', \'the-event-guru\', \'fwmksmfl\', \'sfmklsmf\', \'uploads/events/1783890650_ff01346c36aa284b6ba0.png\', \'uploads/events/1783890650_6cdffea9e497cfa1d5f8.png\', \'2026-07-15\', \'02:32\', \'02:34\', \'berhampur\', \'https://djkgnjdfjjb df\', \'1000\', \'2000\', \'vfdm fd\', \'admin@gmail.com\', \'7844804463\', \'1\', \'2026-07-13 02:40:50\', \'2026-07-13 02:40:50\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `events` (`title`, `slug`, `short_description`, `description`, `image`, `banner_image`, `event_date`, `start_time`, `end_time`, `location`, `google_map`, `max_seats`, `registration_fee`, `organizer_name`, `organizer_email`, `organizer_phone`, `status`, `created_at`, `updated_at`) VALUES (:title:, :slug:, :short_description:, :description:, :image:, :banner_image:, :event_date:, :start_time:, :end_time:, :location:, :google_map:, :max_seats:, :registration_fee:, :organizer_name:, :organizer_email:, :organizer_phone:, :status:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\AdminController.php(983): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->addEventPost()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 02:41:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:41:07 --> CSRF token verified.
+INFO - 2026-07-13 02:41:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-07-13 02:41:07 --> Undefined property: stdClass::$registered_users
+in APPPATH\Views\admin\event\event.php on line 141.
+ 1 APPPATH\Views\admin\event\event.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$registered_users', 'C:\\xampp\\htdocs\\public_html\\app\\Views\\admin\\event\\event.php', 141)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\public_html\\app\\Views\\admin\\event\\event.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/event/event', [], true)
+ 5 APPPATH\Controllers\AdminController.php(913): view('admin/event/event', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->event()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 02:47:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:47:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:47:55 --> CSRF token verified.
+ERROR - 2026-07-13 02:47:55 --> mysqli_sql_exception: Duplicate entry 'the-guru' for key 'slug' in C:\xampp\htdocs\public_html\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\public_html\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 C:\xampp\htdocs\public_html\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 C:\xampp\htdocs\public_html\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 C:\xampp\htdocs\public_html\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 C:\xampp\htdocs\public_html\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\public_html\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\public_html\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\public_html\app\Controllers\AdminController.php(1005): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\public_html\system\CodeIgniter.php(932): App\Controllers\AdminController->addEventPost()
+#9 C:\xampp\htdocs\public_html\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#10 C:\xampp\htdocs\public_html\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\public_html\index.php(86): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2026-07-13 02:47:55 --> Duplicate entry 'the-guru' for key 'slug'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `events` (`title`, `slug`, `short_description`, `description`, `image`, `banner_image`, `event_date`, `start_time`, `end_time`, `location`, `google_map`, `max_seats`, `registration_fee`, `organizer_name`, `organizer_email`, `organizer_phone`, `status`, `created_at`, `updated_at`) VALUES (\'The  Guru\', \'the-guru\', \'fwmksmf\', \'sfmklsmf\', \'uploads/events/1783891075_5b2b328027733e4fa95a.png\', \'uploads/events/1783891075_c05ae2bb4299acbe64ed.png\', \'2026-07-15\', \'02:32\', \'02:34\', \'berhampur\', \'https://djkgnjdfjjb df\', \'1000\', \'2000\', \'vfdm fd\', \'admin@gmail.com\', \'7844804463\', \'1\', \'2026-07-13 02:47:55\', \'2026-07-13 02:47:55\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `events` (`title`, `slug`, `short_description`, `description`, `image`, `banner_image`, `event_date`, `start_time`, `end_time`, `location`, `google_map`, `max_seats`, `registration_fee`, `organizer_name`, `organizer_email`, `organizer_phone`, `status`, `created_at`, `updated_at`) VALUES (\'The  Guru\', \'the-guru\', \'fwmksmf\', \'sfmklsmf\', \'uploads/events/1783891075_5b2b328027733e4fa95a.png\', \'uploads/events/1783891075_c05ae2bb4299acbe64ed.png\', \'2026-07-15\', \'02:32\', \'02:34\', \'berhampur\', \'https://djkgnjdfjjb df\', \'1000\', \'2000\', \'vfdm fd\', \'admin@gmail.com\', \'7844804463\', \'1\', \'2026-07-13 02:47:55\', \'2026-07-13 02:47:55\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `events` (`title`, `slug`, `short_description`, `description`, `image`, `banner_image`, `event_date`, `start_time`, `end_time`, `location`, `google_map`, `max_seats`, `registration_fee`, `organizer_name`, `organizer_email`, `organizer_phone`, `status`, `created_at`, `updated_at`) VALUES (\'The  Guru\', \'the-guru\', \'fwmksmf\', \'sfmklsmf\', \'uploads/events/1783891075_5b2b328027733e4fa95a.png\', \'uploads/events/1783891075_c05ae2bb4299acbe64ed.png\', \'2026-07-15\', \'02:32\', \'02:34\', \'berhampur\', \'https://djkgnjdfjjb df\', \'1000\', \'2000\', \'vfdm fd\', \'admin@gmail.com\', \'7844804463\', \'1\', \'2026-07-13 02:47:55\', \'2026-07-13 02:47:55\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `events` (`title`, `slug`, `short_description`, `description`, `image`, `banner_image`, `event_date`, `start_time`, `end_time`, `location`, `google_map`, `max_seats`, `registration_fee`, `organizer_name`, `organizer_email`, `organizer_phone`, `status`, `created_at`, `updated_at`) VALUES (:title:, :slug:, :short_description:, :description:, :image:, :banner_image:, :event_date:, :start_time:, :end_time:, :location:, :google_map:, :max_seats:, :registration_fee:, :organizer_name:, :organizer_email:, :organizer_phone:, :status:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\AdminController.php(1005): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\AdminController->addEventPost()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 02:48:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:48:10 --> CSRF token verified.
+INFO - 2026-07-13 02:48:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:48:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:48:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:49:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:49:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:49:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:49:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:51:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:53:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 02:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 03:06:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 03:17:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 03:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 03:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2026-07-13 03:18:11 --> [DEPRECATED] strtoupper(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\HomeController.php on line 218.
+ 1 APPPATH\Controllers\HomeController.php(218): strtoupper(null)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->glossary()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 03:18:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 11:14:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 11:15:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 11:15:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 11:15:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 11:15:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 11:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 11:15:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 11:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 11:53:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 11:54:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 11:54:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 11:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 12:04:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 12:07:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 12:07:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 12:12:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 12:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 12:12:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 12:12:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 12:13:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 12:17:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 12:17:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 12:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 12:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 12:23:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 12:23:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 12:24:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2026-07-13 12:24:03 --> [DEPRECATED] strtoupper(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\HomeController.php on line 218.
+ 1 APPPATH\Controllers\HomeController.php(218): strtoupper(null)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->glossary()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 12:24:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 12:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 12:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 12:58:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 12:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 12:58:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:00:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:00:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:00:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:00:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:00:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:00:42 --> CSRF token verified.
+INFO - 2026-07-13 13:00:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:00:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:00:48 --> CSRF token verified.
+INFO - 2026-07-13 13:01:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:01:01 --> CSRF token verified.
+INFO - 2026-07-13 13:01:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:01:04 --> CSRF token verified.
+INFO - 2026-07-13 13:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:01:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:01:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:02:05 --> CSRF token verified.
+INFO - 2026-07-13 13:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:02:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:02:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:04:22 --> CSRF token verified.
+INFO - 2026-07-13 13:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:04:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:04:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:04:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:05:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:05:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:05:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:05:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:05:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:41:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:41:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:43:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:44:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:45:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:45:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 13:45:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 14:06:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 14:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 14:06:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 14:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 14:06:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 14:06:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 14:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 14:06:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 14:06:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 14:07:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 14:07:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 14:07:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 14:07:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 14:07:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 14:07:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 14:07:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 14:07:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 14:07:38 --> CSRF token verified.
+INFO - 2026-07-13 14:07:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 14:07:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 14:07:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 14:07:43 --> CSRF token verified.
+INFO - 2026-07-13 14:07:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 14:07:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:10:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:11:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:12:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-07-13 19:12:42 --> Undefined variable $data
+in APPPATH\Controllers\EventController.php on line 24.
+ 1 APPPATH\Controllers\EventController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\public_html\\app\\Controllers\\EventController.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EventController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 19:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-07-13 19:15:37 --> Undefined variable $description
+in APPPATH\Views\themes\classic\partials\_header.php on line 8.
+ 1 APPPATH\Views\themes\classic\partials\_header.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $description', 'C:\\xampp\\htdocs\\public_html\\app\\Views\\themes\\classic\\partials\\_header.php', 8)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\public_html\\app\\Views\\themes\\classic\\partials\\_header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('themes/classic/partials/_header', [], true)
+ 5 APPPATH\Common.php(91): view('themes/classic/partials/_header', [...])
+ 6 APPPATH\Controllers\EventController.php(24): loadView('partials/_header', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EventController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 19:17:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:17:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:18:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-07-13 19:18:15 --> Invalid file: "{0}"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('themes/classic/themes/classic/event/events.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('themes/classic/themes/classic/event/events', [], true)
+ 3 APPPATH\Common.php(91): view('themes/classic/themes/classic/event/events', [...])
+ 4 APPPATH\Controllers\EventController.php(31): loadView('themes/classic/event/events', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EventController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 19:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:22:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:22:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:22:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:22:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:22:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:22:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:25:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-07-13 19:25:16 --> Invalid file: "{0}"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('themes/classic/event/event_detail.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('themes/classic/event/event_detail', [], true)
+ 3 APPPATH\Controllers\EventController.php(46): view('themes/classic/event/event_detail', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EventController->detail('the-event-guru')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 19:25:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:25:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:26:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:26:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-07-13 19:26:54 --> Invalid file: "{0}"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('themes/classic/event/event_detail.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('themes/classic/event/event_detail', [], true)
+ 3 APPPATH\Controllers\EventController.php(46): view('themes/classic/event/event_detail', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EventController->detail('the-event-guru')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 19:29:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:29:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-07-13 19:29:31 --> Undefined variable $title
+in APPPATH\Views\themes\classic\partials\_header.php on line 7.
+ 1 APPPATH\Views\themes\classic\partials\_header.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\public_html\\app\\Views\\themes\\classic\\partials\\_header.php', 7)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\public_html\\app\\Views\\themes\\classic\\partials\\_header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('themes/classic/partials/_header', [], true)
+ 5 APPPATH\Common.php(91): view('themes/classic/partials/_header', [...])
+ 6 APPPATH\Controllers\EventController.php(44): loadView('partials/_header', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EventController->detail('the-event-guru')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 19:31:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-07-13 19:31:10 --> Invalid file: "{0}"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('themes/classic/event/event_details.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('themes/classic/event/event_details', [], true)
+ 3 APPPATH\Common.php(91): view('themes/classic/event/event_details', [...])
+ 4 APPPATH\Controllers\EventController.php(56): loadView('event/event_details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EventController->detail('the-event-guru')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 19:31:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:31:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-07-13 19:31:19 --> Invalid file: "{0}"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('themes/classic/event/event_details.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('themes/classic/event/event_details', [], true)
+ 3 APPPATH\Common.php(91): view('themes/classic/event/event_details', [...])
+ 4 APPPATH\Controllers\EventController.php(56): loadView('event/event_details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EventController->detail('the-event-guru')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 19:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:34:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:35:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:36:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:36:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:37:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:37:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:37:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:38:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:38:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:38:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:38:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:38:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:39:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:39:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:39:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:39:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:53:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:53:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:53:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:53:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:54:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:54:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:54:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:54:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:54:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:54:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:56:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 19:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 20:05:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 20:05:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 20:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 20:08:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 20:08:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-07-13 20:08:30 --> Invalid file: "{0}"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('themes/classic/event/event_register.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('themes/classic/event/event_register', [], true)
+ 3 APPPATH\Common.php(91): view('themes/classic/event/event_register', [...])
+ 4 APPPATH\Controllers\EventController.php(78): loadView('event/event_register', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EventController->register('1')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 20:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 20:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 20:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 20:10:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 20:10:54 --> CSRF token verified.
+INFO - 2026-07-13 20:12:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 20:12:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 20:12:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 20:12:39 --> CSRF token verified.
+CRITICAL - 2026-07-13 20:12:39 --> Class "App\Models\EventRegistrationModel" not found
+in APPPATH\Controllers\EventController.php on line 84.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EventController->registerPost()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 20:13:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 20:13:58 --> CSRF token verified.
+ERROR - 2026-07-13 20:13:58 --> mysqli_sql_exception: Unknown column 'mobile' in 'field list' in C:\xampp\htdocs\public_html\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\public_html\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 C:\xampp\htdocs\public_html\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 C:\xampp\htdocs\public_html\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 C:\xampp\htdocs\public_html\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 C:\xampp\htdocs\public_html\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\public_html\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\public_html\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\public_html\app\Controllers\EventController.php(96): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\public_html\system\CodeIgniter.php(932): App\Controllers\EventController->registerPost()
+#9 C:\xampp\htdocs\public_html\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+#10 C:\xampp\htdocs\public_html\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\public_html\index.php(86): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2026-07-13 20:13:58 --> Unknown column 'mobile' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event_registrations` (`event_id`, `name`, `email`, `mobile`, `address`, `message`, `status`, `created_at`, `updated_at`) VALUES (\'1\', \'Mithun Swain\', \'mithun.swain900@gmail.com\', \'7855805563\', \'Plotno-88/07\', \'\', 1, \'2026-07-13 20:13:58\', \'2026-07-13 20:13:58\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event_registrations` (`event_id`, `name`, `email`, `mobile`, `address`, `message`, `status`, `created_at`, `updated_at`) VALUES (\'1\', \'Mithun Swain\', \'mithun.swain900@gmail.com\', \'7855805563\', \'Plotno-88/07\', \'\', 1, \'2026-07-13 20:13:58\', \'2026-07-13 20:13:58\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event_registrations` (`event_id`, `name`, `email`, `mobile`, `address`, `message`, `status`, `created_at`, `updated_at`) VALUES (\'1\', \'Mithun Swain\', \'mithun.swain900@gmail.com\', \'7855805563\', \'Plotno-88/07\', \'\', 1, \'2026-07-13 20:13:58\', \'2026-07-13 20:13:58\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event_registrations` (`event_id`, `name`, `email`, `mobile`, `address`, `message`, `status`, `created_at`, `updated_at`) VALUES (:event_id:, :name:, :email:, :mobile:, :address:, :message:, :status:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\EventController.php(96): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EventController->registerPost()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 20:14:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 20:14:07 --> CSRF token verified.
+ERROR - 2026-07-13 20:14:07 --> mysqli_sql_exception: Unknown column 'mobile' in 'field list' in C:\xampp\htdocs\public_html\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\public_html\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ev...', 0)
+#1 C:\xampp\htdocs\public_html\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 C:\xampp\htdocs\public_html\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 C:\xampp\htdocs\public_html\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 C:\xampp\htdocs\public_html\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\public_html\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\public_html\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\public_html\app\Controllers\EventController.php(96): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\public_html\system\CodeIgniter.php(932): App\Controllers\EventController->registerPost()
+#9 C:\xampp\htdocs\public_html\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+#10 C:\xampp\htdocs\public_html\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\public_html\index.php(86): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2026-07-13 20:14:07 --> Unknown column 'mobile' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `event_registrations` (`event_id`, `name`, `email`, `mobile`, `address`, `message`, `status`, `created_at`, `updated_at`) VALUES (\'1\', \'Mithun Swain\', \'mithun.swain900@gmail.com\', \'7855805563\', \'Plotno-88/07\', \'\', 1, \'2026-07-13 20:14:07\', \'2026-07-13 20:14:07\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `event_registrations` (`event_id`, `name`, `email`, `mobile`, `address`, `message`, `status`, `created_at`, `updated_at`) VALUES (\'1\', \'Mithun Swain\', \'mithun.swain900@gmail.com\', \'7855805563\', \'Plotno-88/07\', \'\', 1, \'2026-07-13 20:14:07\', \'2026-07-13 20:14:07\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `event_registrations` (`event_id`, `name`, `email`, `mobile`, `address`, `message`, `status`, `created_at`, `updated_at`) VALUES (\'1\', \'Mithun Swain\', \'mithun.swain900@gmail.com\', \'7855805563\', \'Plotno-88/07\', \'\', 1, \'2026-07-13 20:14:07\', \'2026-07-13 20:14:07\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `event_registrations` (`event_id`, `name`, `email`, `mobile`, `address`, `message`, `status`, `created_at`, `updated_at`) VALUES (:event_id:, :name:, :email:, :mobile:, :address:, :message:, :status:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\EventController.php(96): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\EventController->registerPost()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EventController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+INFO - 2026-07-13 20:17:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 20:17:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 20:17:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 20:17:58 --> CSRF token verified.
+INFO - 2026-07-13 20:17:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 20:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 20:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 20:18:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-13 20:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.

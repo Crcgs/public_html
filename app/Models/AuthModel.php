@@ -1,6 +1,7 @@
 <?php namespace App\Models;
 
 use CodeIgniter\Model;
+use App\Models\UserLogModel;
 
 class AuthModel extends BaseModel
 {
@@ -37,6 +38,18 @@ class AuthModel extends BaseModel
                 return 'banned';
             }
             $this->loginUser($user);
+
+            $logModel = new UserLogModel();
+
+            $logModel->addLog(
+            $user,
+            "Authentication",
+            "Login",
+            "User logged into the system"
+            );
+
+           // $this->addUserLog($user->id, 'User Login');
+
             return "success";
         }
         return false;
@@ -282,6 +295,18 @@ class AuthModel extends BaseModel
     //logout
     public function logout()
     {
+
+   if (authCheck()) {
+
+    $logModel = new UserLogModel();
+
+    $logModel->addLog(
+        user(),
+        "Authentication",
+        "Logout",
+        "User logged out"
+    );
+}
         $this->session->remove('vr_ses_id');
         $this->session->remove('vr_ses_role');
         $this->session->remove('vr_ses_pass');
@@ -439,6 +464,49 @@ class AuthModel extends BaseModel
     {
         return $this->builderRoles->where('role', cleanStr($key))->get()->getRow();
     }
+
+
+    //add role
+    //add role
+public function addRole()
+{
+    $data = [
+        'admin_panel' => inputPost('admin_panel') == 1 ? 1 : 0,
+        'add_post' => inputPost('add_post') == 1 ? 1 : 0,
+        'manage_all_posts' => inputPost('manage_all_posts') == 1 ? 1 : 0,
+        'navigation' => inputPost('navigation') == 1 ? 1 : 0,
+        'pages' => inputPost('pages') == 1 ? 1 : 0,
+        'rss_feeds' => inputPost('rss_feeds') == 1 ? 1 : 0,
+        'categories' => inputPost('categories') == 1 ? 1 : 0,
+        'widgets' => inputPost('widgets') == 1 ? 1 : 0,
+        'polls' => inputPost('polls') == 1 ? 1 : 0,
+        'gallery' => inputPost('gallery') == 1 ? 1 : 0,
+        'comments_contact' => inputPost('comments_contact') == 1 ? 1 : 0,
+        'newsletter' => inputPost('newsletter') == 1 ? 1 : 0,
+        'ad_spaces' => inputPost('ad_spaces') == 1 ? 1 : 0,
+        'users' => inputPost('users') == 1 ? 1 : 0,
+        'plans' => inputPost('plans') == 1 ? 1 : 0,
+        'add_plan' => inputPost('add_plan') == 1 ? 1 : 0,
+        'seo_tools' => inputPost('seo_tools') == 1 ? 1 : 0,
+        'settings' => inputPost('settings') == 1 ? 1 : 0,
+    ];
+
+    // Create multilingual role name
+    $nameArray = [];
+    foreach ($this->activeLanguages as $language) {
+        $nameArray[] = [
+            'lang_id' => $language->id,
+            'name' => inputPost('role_name_' . $language->id)
+        ];
+    }
+
+    $data['role_name'] = serialize($nameArray);
+
+    // Optional: role slug/code
+    $data['role'] = strtolower(url_title(inputPost('role_name_1'), '-', true));
+
+    return $this->builderRoles->insert($data);
+}
 
     //update role
     public function editRole($id)
@@ -649,5 +717,21 @@ public function getAuthorsPaginated($perPage, $offset)
         ->get()
         ->getResult();
 }
+
+
+// user_log_status
+
+// public function addUserLog($userId, $action)
+// {
+//     $data = [
+//         'user_id'    => $userId,
+//         'action'     => $action,
+//         'ip_address' => service('request')->getIPAddress(),
+//         'user_agent' => service('request')->getUserAgent()->getAgentString(),
+//         'created_at' => date('Y-m-d H:i:s')
+//     ];
+
+//     return $this->db->table('user_logs')->insert($data);
+// }
 
 }

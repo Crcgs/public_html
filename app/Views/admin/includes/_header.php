@@ -139,6 +139,7 @@
                         <li class="nav-post-format nav-add-post">
                             <a href="<?= adminUrl('post-format'); ?>"><i class="fa fa-file"></i><span><?= trans("add_post"); ?></span></a>
                         </li>
+                        <li class="nav-bulk-glossary"><a href="<?= adminUrl('bulk-glossary-upload'); ?>"><i class="fa fa-book"></i><span>Bulk Glossary Upload</span></a></li>
                         <li class="nav-import-posts">
                             <a href="<?= adminUrl('bulk-post-upload'); ?>"><i class="fa fa-cloud-upload"></i><span><?= trans("bulk_post_upload"); ?></span></a>
                         </li>
@@ -157,6 +158,10 @@
                                 <li class="nav-drafts"><a href="<?= adminUrl('drafts'); ?>"><?= trans("drafts"); ?></a></li>-->
                             </ul>
                         </li>
+
+                      <?php endif;
+                        if (checkUserPermission('event')): ?><li class="nav-event"><a href="<?= adminUrl('event'); ?>"><i class="fa fa-clock-o" aria-hidden="true"></i><span>Event</span></a></li>
+
                     <?php endif;
                     if (checkUserPermission('rss_feeds')): ?>
                        <!-- <li class="nav-feeds"><a href="<?= adminUrl('feeds'); ?>"><i class="fa fa-rss" aria-hidden="true"></i><span><?= trans("rss_feeds"); ?></span></a></li>-->
@@ -227,9 +232,16 @@
                                     <li class="nav-administrators"><a href="<?= adminUrl('administrators'); ?>"> <?= trans("administrators"); ?></a></li>
                                 <?php endif; ?>
                                 <li class="nav-users"><a href="<?= adminUrl('users'); ?>"> <?= trans("users"); ?></a></li>
+                             <li class="nav-item"><a href="<?= adminUrl('user-logs'); ?>" class="nav-link"><p>User Logs</p></a></li>
+
                             </ul>
                         </li>
+
                     <?php endif;
+
+
+
+
                     if (isAdmin()): ?>
                         <li class="nav-roles-permissions">
                             <a href="<?= adminUrl('roles-permissions'); ?>"><i class="fa fa-key" aria-hidden="true"></i><span><?= trans("roles_permissions"); ?></span></a>

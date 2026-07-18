@@ -72,7 +72,9 @@
                                     <li><a href="#">Knowledge Hub</a></li>
                                     <li><a href="#">Certifications</a></li>
                                     <li><a href="#">Membership</a></li>
-                                    <li><a href="#">Events</a></li>
+                                    <!-- <li><a href="#">Events</a></li> -->
+
+                                    <li><a href="http://localhost:8080/public_html/events">Events</a></li>
                                 </ul>
                             </nav> 
                         </div>

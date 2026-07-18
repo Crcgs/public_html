@@ -1,138 +1,233 @@
 <div id="wrapper">
     <div class="container">
         <div class="row">
+
             <div class="col-sm-12 page-breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="<?= langBaseUrl(); ?>"><?= trans("home"); ?></a></li>
-                    <li class="breadcrumb-item active"><?= trans("posts"); ?></li>
+                    <li class="breadcrumb-item">
+                        <a href="<?= langBaseUrl(); ?>"><?= trans("home"); ?></a>
+                    </li>
+                    <li class="breadcrumb-item active">
+                        Glossary
+                    </li>
                 </ol>
             </div>
+
             <div id="content" class="col-sm-8">
-                <div class="row">
-                    <div class="col-sm-12"><h1 class="page-title">Glossary</h1></div>
-                    <?php
-$currentLetter = '';
 
-if (!empty($glossaries)):
-    foreach ($glossaries as $item):
+                <h1 class="page-title">Glossary</h1>
 
-        $firstLetter = strtoupper(substr($item->word, 0, 1));
+                <?php
+                $activeLetter = strtoupper($_GET['letter'] ?? '');
+                ?>
 
-        if ($firstLetter != $currentLetter):
-            $currentLetter = $firstLetter;
-?>
-            <div class="col-sm-12">
-                <h2 class="glossary-letter"><?= $currentLetter; ?></h2>
-            </div>
-<?php endif; ?>
+                <!-- Alphabet Filter -->
+                <div class="az-bar">
+                    <div class="az-inner">
 
-        <div class="col-sm-6 col-xs-12">
-            <!-- <a href="<?= base_url('glossary-detail/' . $item->id); ?>"
-               class="glossary-word">
-                <?= esc($item->word); ?>
-            </a> -->
-            <a href="<?= current_url() . '?id=' . $item->id; ?>"
-            class="glossary-word">
-             <?= esc($item->word); ?>
-            </a>
-        </div>
+                        <a href="<?= current_url(); ?>"
+                           class="az-item <?= empty($activeLetter) ? 'active' : ''; ?>">
+                            All
+                        </a>
+
+                        <?php foreach(range('A','Z') as $char): ?>
+
+                            <a href="<?= current_url(); ?>?letter=<?= $char; ?>"
+                               class="az-item <?= ($activeLetter==$char)?'active':''; ?>">
+                                <?= $char; ?>
+                            </a>
+
+                        <?php endforeach; ?>
+
+                    </div>
+                </div>
+
+              <div class="row">
 
 <?php
-    endforeach;
-endif;
+$showAll = isset($_GET['all']) && $_GET['all'] == 1;
+
+$groups = [];
+
+foreach ($glossaries as $item) {
+    $letter = strtoupper(substr(trim($item->word), 0, 1));
+
+    if (!empty($activeLetter) && $letter != $activeLetter) {
+        continue;
+    }
+
+    $groups[$letter][] = $item;
+}
+
+foreach ($groups as $letter => $words):
 ?>
-                    
-                </div>
+
+<div class="col-sm-12">
+    <h2 class="letter-title"><?= $letter; ?></h2>
+</div>
+
+<?php
+
+$limit = $showAll ? count($words) : 10;
+$count = 0;
+
+foreach ($words as $word):
+
+    if ($count >= $limit) {
+        break;
+    }
+?>
+
+<div class="col-sm-6 col-xs-12">
+
+    <div class="glossary-card">
+
+        <a href="<?= current_url(); ?>?id=<?= $word->id; ?>">
+            <?= esc($word->word); ?>
+        </a>
+
+    </div>
+
+</div>
+
+<?php
+$count++;
+endforeach;
+?>
+
+<?php if (!$showAll && count($words) > 10): ?>
+
+<div class="col-sm-12 text-center" style="margin:20px 0 40px;">
+
+    <a href="<?= current_url(); ?>?letter=<?= $letter; ?>&all=1"
+       class="btn btn-primary">
+
+        View All (<?= count($words); ?>)
+
+    </a>
+
+</div>
+
+<?php endif; ?>
+
+<?php endforeach; ?>
+
+</div>
+
             </div>
+
             <div id="sidebar" class="col-sm-4">
                 <?= loadView('partials/_sidebar'); ?>
             </div>
+
         </div>
     </div>
 </div>
 
-
-<?php $activeLetter = strtoupper($_GET['letter'] ?? 'A'); ?>
-
-<div class="az-bar">
-    <div class="az-inner">
-        <?php foreach (range('A','Z') as $char): ?>
-            <a href="<?= current_url() . '?letter=' . $char ?>"
-               class="az-item <?= ($activeLetter === $char) ? 'active' : '' ?>">
-                <?= $char ?>
-            </a>
-        <?php endforeach; ?>
-    </div>
-</div>
-
-
 <style>
-/* A–Z Wrapper */
-.az-bar {
-    border-top: 1px solid #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
-    padding: 14px 0;
-    margin: 20px 0 30px;
-        background: #efefef;
+
+.az-bar{
+    background:#fff;
+    border:1px solid #ddd;
+    padding:15px;
+    margin-bottom:30px;
+    border-radius:6px;
 }
 
-/* Inner Row */
-.az-inner {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
+.az-inner{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
 }
 
-/* Letters */
-.az-item {
-    width: 42px;
-    height: 42px;
-    line-height: 40px;
-    text-align: center;
-    border: 1px solid #dcdcdc;
-    border-radius: 4px;
-    font-size: 15px;
-    font-weight: 600;
-    color: #222;
-    background: #fff;
-    text-decoration: none;
-    transition: all 0.2s ease;
+.az-item{
+    width:40px;
+    height:40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:1px solid #ddd;
+    border-radius:5px;
+    text-decoration:none;
+    color:#444;
+    background:#fff;
+    font-weight:600;
+    transition:.2s;
 }
 
-.az-item:hover {
-    background: #f4f4f4;
+.az-item:hover{
+    background:#f4f4f4;
 }
 
-/* Active */
-.az-item.active {
-    background: #2f6ce5;
-    color: #fff;
-    border-color: #2f6ce5;
+.az-item.active{
+    background:#1565C0;
+    color:#fff;
+    border-color:#1565C0;
 }
 
-/* 📱 Mobile EXACT behavior */
-@media (max-width: 768px) {
-    .az-inner {
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        overflow-x: auto;
-        padding: 0 10px;
-    }
-
-    .az-item {
-        flex: 0 0 auto;
-    }
-
-    .az-inner::-webkit-scrollbar {
-        height: 6px;
-    }
-
-    .az-inner::-webkit-scrollbar-thumb {
-        background: #ccc;
-        border-radius: 3px;
-    }
+.letter-title{
+    margin-top:25px;
+    margin-bottom:15px;
+    padding-bottom:10px;
+    border-bottom:2px solid #1565C0;
+    font-size:28px;
+    font-weight:bold;
 }
 
+.glossary-card{
+
+    background:#fff;
+    border:1px solid #e5e5e5;
+    border-radius:6px;
+    padding:14px 18px;
+    margin-bottom:15px;
+    transition:.3s;
+}
+
+.glossary-card:hover{
+
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+    transform:translateY(-2px);
+
+}
+
+.glossary-card a{
+
+    text-decoration:none;
+    color:#222;
+    font-size:16px;
+    font-weight:600;
+
+}
+
+.glossary-card a:hover{
+
+    color:#1565C0;
+
+}
+
+@media(max-width:768px){
+
+.az-inner{
+
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    padding-bottom:5px;
+
+}
+
+.az-item{
+
+    flex:0 0 auto;
+
+}
+
+.letter-title{
+
+    font-size:24px;
+
+}
+
+}
 
 </style>

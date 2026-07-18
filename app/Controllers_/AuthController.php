@@ -6,6 +6,7 @@ use App\Models\AuthModel;
 use App\Models\CategoryModel;
 use App\Models\EmailModel;
 use App\Models\NewsletterModel;
+use App\Models\UserLogModel;
 
 class AuthController extends BaseController
 {
